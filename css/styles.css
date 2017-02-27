@@ -345,6 +345,38 @@ input {
       float: none;
       margin: 0;
     }
+
+  }
+
+  @media (min-width: 768px) and (max-width: 992px) {
+    .navbar-toggle {
+      display:inline-block;
+    }
+
+    .navbar-header {
+      width:100%;
+    }
+
+    .navbar-collapse.collapse {
+      display:none!important;
+    }
+
+    .collapse.in {
+      display:block!important;
+    }
+
+    .botton{
+      width:100%;
+    }
+
+    .navbar-header{
+      width:100%;
+      margin:0;
+    }
+
+    .avoid-z-index {
+      margin-bottom:90px;
+    }
   }
 
 /* end pruebas menu cotizacion */
