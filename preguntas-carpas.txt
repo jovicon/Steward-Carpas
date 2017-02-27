@@ -1,0 +1,44 @@
+/****************************************************************************
+GENERAL
+
+1. me daran las imagenes necesarias
+
+2. revision de login antes de cotizacion?
+
+3. precios a manejar
+
+4. boton de next para movil?
+
+/****************************************************************************
+PASO1
+
+1. en el paso 1 se deben seleccionar las imagenes como botones?
+
+2. mismo efecto en botones de paso 2 o imagenes como ya estan?
+
+/****************************************************************************
+PASO2
+
+1. en el paso 2 boton desplegable en vista movil para mejorar la experiencia
+del usuario
+
+2. mantener boton compuesto o botones separados para pantalla tablet/pc?
+
+3. javascript para interaccion de fotos con botones
+
+/****************************************************************************
+PASO3
+
+1. imagenes simuladas?
+
+2. en el paso 3 que se desplega desde "pagoda"?
+
+3. botones desplegables compuestos para diseno movil y tablet?
+
+/****************************************************************************
+COTIZACION
+
+1. Diseno de cotizacion esta bien?
+(variancion con ITEMS blanco/negro TOTAL rojo/blanco)
+
+2. desglozar cotizacion por pasos y luego mostrar los items en los detalles

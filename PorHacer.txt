@@ -1,0 +1,67 @@
+/****************************************************************************
+IDEAS
+
+1. Hacer un slide de imagenes con un check-box por dentro.
+
+/****************************************************************************
+GENERAL
+
+1. colocar los inputs obligatorios
+
+2. puntos de cantidad de imagenes como instagram
+
+/****************************************************************************
+PASO 1
+
+1. agregar borde a las imagenes, transiciones de color?
+
+2. guardar variable de personas para imprimir en cotizador.
+
+3. cambiar de color de gris a negro, imagen tercer boton
+
+/****************************************************************************
+PASO 2
+
+1. cambio de boton unitario a varios botones
+
+2. cambio de boton complejo a grupo de botones? (variante tablet)
+
+3. insertar imagenes
+
+4. javascript para intereaccion de foto con botones
+
+/****************************************************************************
+PASO 3
+
+1. diseno de botones
+
+2. insertar imagenes
+
+3. javascript para interaccion de fotos con botones
+
+4. usar vista de botones a iconos y check boxs
+
+/****************************************************************************
+COTIZACION
+
+1. cambiar tamano y diseno de font
+
+2. mostrar precios e items marcados
+
+3. detalles siempre desplegados
+
+4. el total siempre visible en moviles
+
+5. desplegable con boton en movil
+
+/****************************************************************************
+TOTAL MOVIL
+
+  necesito que total siempre se muestre y que tenga un boton
+  a su lado para que se despliegue el resto de los paso hacia arriba.
+
+  debo comenzar por colocar total a la vista, pero sabiendo que sera parte
+  final de un list y que solo en vista movil tendra un boton a su lado.
+
+  a partir de alli debo seguir con los detalles de javascript para hacer los
+  movimientos del boton, sus IDS y consecuentes.

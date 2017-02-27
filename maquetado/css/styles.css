@@ -1,0 +1,350 @@
+/* mis estilos */
+
+body,html {
+    font-family: Homenaje;
+    max-width:100%;
+    overflow-x:hidden;
+}
+
+.main-color {
+    /*background-color: #c00232;*/
+    background-color:#ff5000;
+    color:white;
+}
+
+.second-color {
+    background-color: white;
+    color:black;
+}
+
+.little-box {
+    width: 100%;
+    /*background-color: #c00232;*/
+    background-color:#ff5000;
+    border-radius: 4px;
+    margin: 5px 0;
+}
+
+.little-box h2 {
+        color:white;
+        font: bold 20px Homenaje;
+        margin:0;
+        padding:5px 0;
+    }
+
+  h2.center-text {
+    vertical-align:middle;
+  }
+
+.the-buttons {
+    width:100%;
+    margin:0;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+
+.buttoms-text {
+    white-space:nowrap;
+    text-align:center;
+}
+
+input {
+    width:100%;
+}
+
+.big {
+    width:100%;
+}
+
+.mid {
+    width:70%;
+    text-align:left;
+    white-space:normal;
+    /*border-color:#c00232;*/
+    border-color:#ff5000;
+}
+
+.small {
+    width:25%;
+}
+
+.orange-shadow:focus {
+    border-color:rgba(255,80,0,0.9);
+    box-shadow: rgba(255,80,0,0.4) 1px 1px 1px 1px;
+}
+
+.main-color-buttons {
+    margin: 3px 0;
+    background-color:transparent;
+    /*border: solid 1px #c00232;*/
+    border: solid 1px #ff5000;
+    border-radius:4px;
+}
+
+.main-color-buttons:hover{
+    background-color:rgba(255,80,0,0.3);
+    border:none;
+    transition: 0.5s;
+}
+
+.main-color-buttons:focus{
+    outline:0;
+    /*background-color:#c00232;*/
+    background-color:#ff5000;
+    color: white;
+    transition: 0.5s;
+}
+
+.little-margin {
+    margin-bottom: 3px;
+}
+
+.big p {
+    font:bold 18px Homenaje;
+}
+
+/* latops and pc */
+@media (min-width: 1024px){
+    .quote-fixed {
+      clear:both;
+      position:fixed;
+      margin-left:-15px;
+      top:0;
+      z-index:100;
+    }
+
+    .navbar-header {
+      width:50%;
+      border-radius:4px;
+    }
+}
+/* end laptops and pc */
+
+/* tablet s > l */
+@media (min-width: 426px){
+    .buttom-image, .buttom-image2 {
+        width:120px;
+        height:120px;
+    }
+
+    .buttom-image3 {
+        width:120px;
+        height:120px;
+        padding:10px;
+    }
+}
+/* end tablet s > l*/
+
+
+/* tablet */
+@media (max-width: 768px){
+
+    .big p {
+        font: bold 18px Homenaje;
+    }
+
+    .big-p {
+        padding-right: 480px;
+        background-color:white;
+        color:black;
+        font:bold 18px Homenaje;
+    }
+
+    .avoid-z-index {
+      margin-bottom:90px;
+    }
+
+    .input-group .form-control {
+      z-index:0;
+    }
+}
+/* end tablet */
+
+/* mobile l */
+@media (max-width: 425px) {
+
+    .the-buttons {
+        display:block;
+        width:35%;
+        margin:0 auto;
+    }
+
+    .the-buttons2 {
+        width:80%;
+    }
+
+   .center-text {
+        padding: 0px 0px 10px 0;
+    }
+
+    .little-box h2 {
+        font: bold 20px Homenaje;
+        padding-top:7px;
+    }
+
+    .big-p {
+        padding-right:156px;
+    }
+
+    .container {
+      padding-left:8px;
+      padding-right:24px;
+      width:100%;
+    }
+
+}
+/* end mobile l */
+
+/* mobile m */
+@media (max-width: 375px){
+    .big-p {
+        padding-right:105px;
+    }
+
+    .small-p {
+        height:55px;
+    }
+
+    .container {
+      padding-left:8px;
+      padding-right:24px;
+      width:100%;
+    }
+
+}
+/* end mobile m */
+
+/* mobile s */
+@media (max-width: 320px) {
+    .big-p {
+        padding-right:50px;
+    }
+
+    .container {
+      padding-left:8px;
+      padding-right:24px;
+      width:100%;
+    }
+}
+/* end mobile s */
+
+
+/* pruebas menu cotizacion*/
+
+@media (max-device-width: 480px) and (orientation: landscape) {
+  .navbar.navbar-default {
+    margin-right:20px;
+  }
+
+  .navbar-fixed-top .navbar-collapse,
+  .navbar-fixed-bottom .navbar-collapse {
+    max-height: 200px;
+  }
+
+  .navbar-header {
+    /*width:100%;*/
+  }
+
+  .container {
+    /*padding-left:5px;*/
+    padding-right:15px;
+  }
+
+  section.botton {
+    margin-left:20px;
+  }
+}
+
+.group-width {
+  width:80%;
+}
+
+.button-align {
+  margin-top:15px;
+}
+
+.botton {
+  width:100%;
+  border-radius:4px;
+  position:fixed;
+  clear:both;
+  bottom:-20px;
+  /*background-color:#ff5000;*/
+  }
+
+.bottom .container .navbar-brand {
+  color: white;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color:white;
+}
+
+.navbar-header {
+  background-color:#ff5000;
+}
+
+
+
+@media (max-width: 768px){
+  .mid{
+    /*width:30%;*/
+    font:bold 18px Homenaje;
+  }
+
+
+}
+
+@media (min-width:426px) and (max-width: 768px){
+  .navbar-toggle {
+    display:inline-block;
+  }
+
+  .navbar-header {
+    width:100%;
+  }
+
+  .navbar-collapse.collapse {
+    display:none!important;
+  }
+
+  .collapse.in {
+    display:block!important;
+  }
+
+  .botton{
+    width:100%;
+  }
+
+  .navbar-header{
+    width:100%;
+    margin:0;
+  }
+}
+
+@media (max-width: 767px){
+  .navbar-collapse {
+    padding-right: 15px;
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: 768px){
+  .container {
+    padding-left:8px;
+    padding-right:24px;
+    width:100%;
+  }
+
+    .navbar-nav > li {
+      float:none;
+    }
+
+    .navbar-nav {
+      float: none;
+      margin: 0;
+    }
+  }
+
+/* end pruebas menu cotizacion */
