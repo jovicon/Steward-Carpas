@@ -380,3 +380,7 @@ input {
   }
 
 /* end pruebas menu cotizacion */
+
+.navbar {
+    border:none;
+}
