@@ -61,6 +61,7 @@ input {
     width:70%;
     text-align:left;
     white-space:normal;
+    font:bold 15px #ffffff;
     /*border-color:#c00232;*/
     border-color:#ff5000;
 }
@@ -141,7 +142,7 @@ input {
 @media (max-width: 768px){
 
     .big p {
-        font: bold 18px Homenaje;
+        font: bold 15px Homenaje;
     }
 
     .big-p {
@@ -204,6 +205,7 @@ input {
 
     .small-p {
         height:55px;
+
     }
 
     .container {
@@ -290,7 +292,7 @@ input {
 @media (max-width: 768px){
   .mid{
     /*width:30%;*/
-    font:bold 18px Homenaje;
+    font:bold 15px Homenaje;
   }
 
 
@@ -384,3 +386,7 @@ input {
 .navbar {
     border:none;
 }
+
+/*.items_cotizacion {
+    width:100%;
+}*/
