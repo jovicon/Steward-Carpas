@@ -394,3 +394,39 @@ input {
 .adaptar {
   width:200;
 }
+
+/* imagenes paso 2 */
+
+
+
+.static-image {
+  height: inherit;
+}
+
+.img_paso2 {
+  position:absolute;
+  display:none;
+  height: inherit;
+  /*clear:both;*/
+}
+
+.img_hidden{
+  display:block;
+}
+
+.bas_right {
+  /*right:50%;*/
+}
+
+@media (min-width: 1024px) {
+  .img_vision {
+    height:400px;
+  }
+
+  .img_vision {
+    margin-left:13%;
+  }
+}
+
+
+/* end imagenes paso 2 */
