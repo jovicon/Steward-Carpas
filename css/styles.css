@@ -434,6 +434,10 @@ input {
   border:solid 2px #ff5000;
 }
 
+.carousel-indicators {
+  z-index:1;
+}
+
 /* end selectores paso 1 */
 
 /* imagenes paso 2 */
@@ -467,5 +471,25 @@ input {
   }
 }
 
-
 /* end imagenes paso 2 */
+
+
+/* paso 3 */
+
+  .btn-warning {
+    background-color: #ff5000;
+  }
+
+/* end paso 3 */
+
+/* cotizacion */
+
+.botton {
+  z-index: 2;
+}
+
+.last-margin {
+  margin-bottom: 100px;
+}
+
+/* end cotizacion */
