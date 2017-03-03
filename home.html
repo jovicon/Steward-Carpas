@@ -59,7 +59,7 @@
 
                             <div class="col-xs-12 col-md-12">
 
-                                <input class="buttom-image" type="image" src="img/coctel_de_pie.jpg" value="insertar imagen"/>
+                                <input id="boton01" class="buttom-image" type="image" src="img/coctel_de_pie.png" value="insertar imagen"/>
 
                                 <p class="buttoms-text">coctel de pie</p>
 
@@ -71,7 +71,7 @@
 
                             <div class="col-xs-12 col-md-12">
 
-                                <input class="buttom-image2" type="image" src="img/conferencia.png" value="insertar imagen"/>
+                                <input id="boton02" class="buttom-image2" type="image" src="img/conferencia.png" value="insertar imagen"/>
 
                                 <p class="buttoms-text">conferencia o seminario</p>
 
@@ -83,7 +83,7 @@
 
                             <div class="col-xs-12">
 
-                                <input class="buttom-image3" type="image" src="img/descargamesa2.png" value="insertar imagen"/>
+                                <input id="boton03" class="buttom-image3" type="image" src="img/descargamesa2.png" value="insertar imagen"/>
 
                                 <p class="buttoms-text">Servicio a la mesa</p>
 
@@ -102,18 +102,20 @@
 
                         <div class="radio">
 
-                          <input type="radio" name="formato" id="coctel_pie">
-                          <label for="coctel_pie">Coctel de pie</label>
+                          <input type="radio" name="formato" id="radio01" required>
+                          <label for="radio01">Coctel de pie</label>
 
-                          <input type="radio" name="formato" id="conferencia_seminario">
-                          <label for="conferencia_seminario">Conferencia o Seminario</label>
+                          <input type="radio" name="formato" id="radio02" required>
+                          <label for="radio02">Conferencia o Seminario</label>
 
-                          <input type="radio" name="formato" id="servicio_mesa">
-                          <label for="servicio_mesa">Servicio para la mesa</label>
+                          <input type="radio" name="formato" id="radio03" required>
+                          <label for="radio03">Servicio para la mesa</label>
 
                         </div>
 
                       </form>
+
+                      <!-- <input name="radio_comprobar" id="radio_comprobar" type="button" value="Comprobar" />  -->
 
                     </div>
 

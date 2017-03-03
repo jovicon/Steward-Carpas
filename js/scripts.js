@@ -1,29 +1,51 @@
-// funcionamiento de botones slider
+// funcionamiento botones paso 1
 
-function moveImage0(){
-  document.miFormulario.miCheck0.click()
-}
+$( "#radio01" ).click(function() {
+    if( $(".my_form input[name='formato']:radio").is(':checked') ){
+        $("#boton01").addClass("back-img-paso1");
+        $("#boton03").removeClass("back-img-paso1");
+        $("#boton02").removeClass("back-img-paso1");
+    }
+});
 
-function moveImage1(){
-  document.miFormulario.miCheck1.click()
-}
+$( '#radio02' ).click(function() {
+    if( $(this).is(':checked') ){
+        $("#boton02").addClass("back-img-paso1");
+        $("#boton03").removeClass("back-img-paso1");
+        $("#boton01").removeClass("back-img-paso1");
+    }
+});
 
-function moveImage2(){
-  document.miFormulario.miCheck2.click()
-}
+$( '#radio03' ).click(function() {
+    if( $(this).is(':checked') ){
+        $("#boton03").addClass("back-img-paso1");
+        $("#boton02").removeClass("back-img-paso1");
+        $("#boton01").removeClass("back-img-paso1");
+    }
+});
 
-function moveImage3(){
-  document.miFormulario.miCheck3.click()
-}
+$("#boton").click(function () {
+			if( $("#formulario input[name='pie']:radio").is(':checked')) {
+				  $("#boton01").addClass("back-img-paso1");
+				} else {
+				    $("#boton01").removeClass("back-img-paso1");
+				}
+});
 
-function moveImage4(){
-  document.miFormulario.miCheck4.click()
-}
+$("#radio_comprobar").click(function() {
+        if($("#radio01").is(':checked')) {
+            alert("Está activado");
+            $("#boton01").addClass("back-img-paso1");
+        } else {
+            alert("No está activado");
+            $("#boton01").removeClass("back-img-paso1");
+        }
+    });
 
-// end funcionamiento botones slider
+// end funcionamiento botones paso 1
 
 
-// agregar clase a imaegenes
+// agregar clase a imaegenes paso 2
 
 $( '#checkbox01' ).click(function() {
     if( $(this).is(':checked') ){
@@ -72,4 +94,28 @@ $( '#checkbox06' ).click(function() {
         $("#img06").removeClass("img_hidden");
     }
 });
-// end agregar clases a imagenes
+// end agregar clases a imagenes paso 2
+
+// funcionamiento de botones slider paso 3
+
+function moveImage0(){
+  document.miFormulario.miCheck0.click();
+}
+
+function moveImage1(){
+  document.miFormulario.miCheck1.click();
+}
+
+function moveImage2(){
+  document.miFormulario.miCheck2.click();
+}
+
+function moveImage3(){
+  document.miFormulario.miCheck3.click();
+}
+
+function moveImage4(){
+  document.miFormulario.miCheck4.click();
+};
+
+// end funcionamiento botones slider paso 3

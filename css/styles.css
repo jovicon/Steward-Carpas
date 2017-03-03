@@ -395,9 +395,18 @@ input {
   width:200;
 }
 
+
+/* imagenes paso 1*/
+
+.back-img-paso1 {
+  padding: 15px;
+  border:solid 2px #ff5000;
+  border-radius:10px;
+}
+
+/* end imagenes paso 1*/
+
 /* imagenes paso 2 */
-
-
 
 .static-image {
   height: inherit;
