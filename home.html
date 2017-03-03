@@ -61,8 +61,6 @@
 
                                 <input id="boton01" class="buttom-image" type="image" src="img/coctel_de_pie.png" value="insertar imagen"/>
 
-                                <p class="buttoms-text">coctel de pie</p>
-
                             </div>
 
                         </div>
@@ -72,8 +70,6 @@
                             <div class="col-xs-12 col-md-12">
 
                                 <input id="boton02" class="buttom-image2" type="image" src="img/conferencia.png" value="insertar imagen"/>
-
-                                <p class="buttoms-text">conferencia o seminario</p>
 
                             </div>
 
@@ -85,14 +81,74 @@
 
                                 <input id="boton03" class="buttom-image3" type="image" src="img/descargamesa2.png" value="insertar imagen"/>
 
-                                <p class="buttoms-text">Servicio a la mesa</p>
-
                             </div>
 
                         </div>
 
                     </div>
                     <!-- end botones de seleccion -->
+
+                    <!-- imagen de accesorios -->
+                    <div class="row">
+
+                        <div class="col-xs-12">
+
+                            <!-- slider -->
+                            <section id="mySlide1" class="carousel slide">
+
+                              <!-- lista de imagenes -->
+                              <ol class="carousel-indicators">
+                                <li data-target="#mySlide1" data-slide-to="0" class="active"></li>
+                                <li data-target="#mySlide1" data-slide-to="1"></li>
+                                <li data-target="#mySlide1" data-slide-to="2"></li>
+                              </ol>
+                              <!-- end lista de imagenes -->
+
+                              <!-- imagenes de slide -->
+                              <div class="carousel-inner carousel-height">
+
+                                <div class="item active">
+                                  <img class="img-responsive margin-img-paso1" src="img/coctel_de_pie.png" alt="">
+                                </div>
+
+                                <div class="item">
+                                  <img class="img-responsive margin-img-paso1" src="img/conferencia.png" alt="">
+                                </div>
+
+                                <div class="item">
+                                  <img class="img-responsive margin-img-paso1" src="img/descargamesa2.png" alt="">
+                                </div>
+
+                              </div>
+
+                              <a href="#mySlide1" class="left carousel-control" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                              <a href="#mySlide1" class="right carousel-control" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+
+                            </section>
+                            <!-- end imagenes de slide-->
+
+                            <!-- botones imaginarios de seleccion -->
+                            <div class="the-buttons the-buttons2" style="display:none;">
+
+                                <div class="row">
+
+                                    <div class="col-xs-12 col-md-12">
+                                      <form name="miFormulario1" action="index.html" method="post">
+                                        <input data-target="#mySlide1" data-slide-to="0" class="main-color-buttons" type="button" value="cierre perimetral" name="miRadio0"/>
+                                        <input data-target="#mySlide1" data-slide-to="1" class="main-color-buttons" type="button" value="cortinaje perimetral" name="miRadio1"/>
+                                        <input data-target="#mySlide1" data-slide-to="2" class="main-color-buttons" type="button" value="cenefa y pies de cotina" name="miRadio2"/>
+                                      </form>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <!-- end botones imaginarios de seleccion -->
+
+                        </div>
+
+                    </div>
+                    <!-- imagen de accesorios -->
 
                     <!-- prueba de check y radio buttons -->
 
@@ -103,13 +159,13 @@
                         <div class="radio">
 
                           <input type="radio" name="formato" id="radio01" required>
-                          <label for="radio01">Coctel de pie</label>
+                          <label for="radio01" onclick="moveImage01()">Coctel de pie</label>
 
                           <input type="radio" name="formato" id="radio02" required>
-                          <label for="radio02">Conferencia o Seminario</label>
+                          <label for="radio02" onclick="moveImage02()">Conferencia o Seminario</label>
 
                           <input type="radio" name="formato" id="radio03" required>
-                          <label for="radio03">Servicio para la mesa</label>
+                          <label for="radio03" onclick="moveImage03()">Servicio para la mesa</label>
 
                         </div>
 
@@ -260,7 +316,7 @@
                               <div class="carousel-inner">
 
                                 <div class="item active">
-                                  <img src="img/img1.jpg" class="adaptar" alt="">
+                                  <img src="img/img3.jpg" class="adaptar" alt="">
                                 </div>
 
                                 <div class="item">
@@ -268,7 +324,7 @@
                                 </div>
 
                                 <div class="item">
-                                  <img src="img/img3.jpg" class="adaptar" alt="">
+                                  <img src="img/img1.jpg" class="adaptar" alt="">
                                 </div>
 
                                 <div class="item">
@@ -286,14 +342,13 @@
 
                             </section>
                             <!-- end imagenes de slide-->
-                        </div>
 
-                        <div class="col-xs-1"></div>
+                        </div>
 
                     </div>
                     <!-- imagen de accesorios -->
 
-                    <!-- botones de seleccion -->
+                    <!-- botones imaginarios de seleccion -->
                     <div class="the-buttons the-buttons2" style="display:none;">
 
                         <div class="row">
@@ -311,7 +366,7 @@
                         </div>
 
                     </div>
-                    <!-- end botones de seleccion -->
+                    <!-- end botones imaginarios de seleccion -->
 
                     <!-- botones de ejemplo -->
                     <div class="wrap">
@@ -321,19 +376,19 @@
                         <div class="checkbox">
 
                           <input type="checkbox" name="checkbox4" id="checkbox4">
-                          <label for="checkbox4" onclick="moveImage0()">Cierre Perimetral</label>
+                          <label for="checkbox4" onclick="moveImage0()">Carpa de servicio</label>
 
                           <input type="checkbox" name="checkbox5" id="checkbox5">
-                          <label for="checkbox5" onclick="moveImage1()">Cortinaje Perimetral</label>
+                          <label for="checkbox5" onclick="moveImage1()">Pista de baile</label>
 
                           <input type="checkbox" name="checkbox6" id="checkbox6">
-                          <label for="checkbox6" onclick="moveImage2()">Cenefa y pies de cortina</label>
+                          <label for="checkbox6" onclick="moveImage2()">Iluminacion Ambiental</label>
 
                           <input type="checkbox" name="checkbox7" id="checkbox7">
-                          <label for="checkbox7" onclick="moveImage3()">Cielo falso</label>
+                          <label for="checkbox7" onclick="moveImage3()">Escenario</label>
 
                           <input type="checkbox" name="checkbox8" id="checkbox8">
-                          <label for="checkbox8" onclick="moveImage4()">Pasto sintetico</label>
+                          <label for="checkbox8" onclick="moveImage4()">pasillo de alfombra</label>
 
                         </div>
 
@@ -366,7 +421,7 @@
 
                         <div class="input-group items_cotizacion">
 
-                            <p class="input-group-addon mid main-color">Superficie Aprox. Toldo para 300 invitados (300 mts2)</p>
+                            <p class="input-group-addon mid main-color">Paso 1</p>
                             <input class="form-control small-p">
 
                         </div>
@@ -377,7 +432,7 @@
 
                         <div class="input-group items_cotizacion">
 
-                            <p class="input-group-addon mid main-color">Cierre perimetral</p>
+                            <p class="input-group-addon mid main-color">Paso 2</p>
                             <input class="form-control small">
 
                         </div>
@@ -388,7 +443,7 @@
 
                         <div class="input-group items_cotizacion">
 
-                            <p class="input-group-addon mid main-color">Escenario (2 modulos)</p>
+                            <p class="input-group-addon mid main-color">Paso 3</p>
                             <input class="form-control small">
 
                         </div>

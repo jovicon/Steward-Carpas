@@ -24,23 +24,19 @@ $( '#radio03' ).click(function() {
     }
 });
 
-$("#boton").click(function () {
-			if( $("#formulario input[name='pie']:radio").is(':checked')) {
-				  $("#boton01").addClass("back-img-paso1");
-				} else {
-				    $("#boton01").removeClass("back-img-paso1");
-				}
-});
+function moveImage01(){
+  document.miFormulario1.miRadio0.click();
+}
 
-$("#radio_comprobar").click(function() {
-        if($("#radio01").is(':checked')) {
-            alert("Está activado");
-            $("#boton01").addClass("back-img-paso1");
-        } else {
-            alert("No está activado");
-            $("#boton01").removeClass("back-img-paso1");
-        }
-    });
+function moveImage02(){
+  document.miFormulario1.miRadio1.click();
+}
+
+function moveImage03(){
+  document.miFormulario1.miRadio2.click();
+}
+
+
 
 // end funcionamiento botones paso 1
 

@@ -70,6 +70,10 @@ input {
     width:25%;
 }
 
+.orange-shadow {
+  border-color:rgba(255,80,0,0.9);
+}
+
 .orange-shadow:focus {
     border-color:rgba(255,80,0,0.9);
     box-shadow: rgba(255,80,0,0.4) 1px 1px 1px 1px;
@@ -404,7 +408,33 @@ input {
   border-radius:10px;
 }
 
+@media (min-width: 1024px){
+  .carousel-height {
+    height:177px;
+  }
+}
+
+.carousel-height > .item > a > img, .carousel-height > .item > img, .img-responsive, .thumbnail a > img, .thumbnail > img {
+  height:177px;
+}
+
+.margin-img-paso1 {
+  margin:auto;
+}
+
 /* end imagenes paso 1*/
+
+/* selectores paso 1 */
+
+.carousel-indicators .active {
+  background-color: #ff5000;
+}
+
+.carousel-indicators li {
+  border:solid 2px #ff5000;
+}
+
+/* end selectores paso 1 */
 
 /* imagenes paso 2 */
 
