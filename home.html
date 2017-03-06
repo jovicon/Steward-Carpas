@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
+
   <head>
+
     <meta charset="utf-8">
     <meta name="description" content=""/>
     <meta name="keywords" content=""/>
@@ -20,7 +22,9 @@
 
     <!-- llamado de mis fonts -->
     <link rel="stylesheet" type="text/css" href="fonts/myfonts.css"/>
+
     <title>cotizador carpas steward</title>
+
   </head>
 
   <body>
@@ -30,7 +34,7 @@
         <div class="container">
 
           <!-- paso 1,2,3 -->
-          <div class="col-xs-12 col-md-6">
+          <div class="total-width col-xs-12 col-md-6">
 
             <!-- paso 1 en la cotizacion de carpas -->
             <section class="global">
@@ -52,34 +56,54 @@
                     </div>
                     <!-- end barra de mensaje -->
 
+                    <!-- numero de invitados -->
+                    <div class="row margin-bottom">
+
+                        <div class="col-xs-12">
+
+                            <div class="input-group big">
+
+                                <p class="input-group-addon main-color mid">Inserte el numero de invitados</p>
+                                <input class="form-control orange-shadow small" required>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- end numero de invitados -->
+
                     <!-- botones de seleccion -->
                     <div class="the-buttons">
 
-                        <div class="row">
+                        <div class="row margin-top">
 
-                            <div class="col-xs-12 col-md-12">
+                            <div class="col-xs-12 col-md-12 option-button">
 
                                 <input id="boton01" class="buttom-image" type="image" src="img/coctel_de_pie.png" value="insertar imagen"/>
+                                <p class="text-align">Coctel de pie</p>
 
                             </div>
 
                         </div>
 
-                        <div class="row">
+                        <div class="row margin-top">
 
-                            <div class="col-xs-12 col-md-12">
+                            <div class="col-xs-12 col-md-12 option-button">
 
                                 <input id="boton02" class="buttom-image2" type="image" src="img/conferencia.png" value="insertar imagen"/>
+                                <p class="text-align">Conferencia</p>
 
                             </div>
 
                         </div>
 
-                        <div class="row">
+                        <div class="row margin-top option-button">
 
                             <div class="col-xs-12">
 
                                 <input id="boton03" class="buttom-image3" type="image" src="img/descargamesa2.png" value="insertar imagen"/>
+                                <p class="text-align">Atencion a mesa</p>
 
                             </div>
 
@@ -88,71 +112,8 @@
                     </div>
                     <!-- end botones de seleccion -->
 
-                    <!-- imagen de accesorios -->
-                    <div class="row">
-
-                        <div class="col-xs-12">
-
-                            <!-- slider -->
-                            <section id="mySlide1" class="carousel slide">
-
-                              <!-- lista de imagenes -->
-                              <ol class="carousel-indicators">
-                                <li data-target="#mySlide1" data-slide-to="0" class="active"></li>
-                                <li data-target="#mySlide1" data-slide-to="1"></li>
-                                <li data-target="#mySlide1" data-slide-to="2"></li>
-                              </ol>
-                              <!-- end lista de imagenes -->
-
-                              <!-- imagenes de slide -->
-                              <div class="carousel-inner carousel-height">
-
-                                <div class="item active">
-                                  <img class="img-responsive margin-img-paso1" src="img/coctel_de_pie.png" alt="">
-                                </div>
-
-                                <div class="item">
-                                  <img class="img-responsive margin-img-paso1" src="img/conferencia.png" alt="">
-                                </div>
-
-                                <div class="item">
-                                  <img class="img-responsive margin-img-paso1" src="img/descargamesa2.png" alt="">
-                                </div>
-
-                              </div>
-
-                              <a href="#mySlide1" class="left carousel-control" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-                              <a href="#mySlide1" class="right carousel-control" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-
-                            </section>
-                            <!-- end imagenes de slide-->
-
-                            <!-- botones imaginarios de seleccion -->
-                            <div class="the-buttons the-buttons2" style="display:none;">
-
-                                <div class="row">
-
-                                    <div class="col-xs-12 col-md-12">
-                                      <form name="miFormulario1" action="index.html" method="post">
-                                        <input data-target="#mySlide1" data-slide-to="0" class="main-color-buttons" type="button" value="cierre perimetral" name="miRadio0"/>
-                                        <input data-target="#mySlide1" data-slide-to="1" class="main-color-buttons" type="button" value="cortinaje perimetral" name="miRadio1"/>
-                                        <input data-target="#mySlide1" data-slide-to="2" class="main-color-buttons" type="button" value="cenefa y pies de cotina" name="miRadio2"/>
-                                      </form>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                            <!-- end botones imaginarios de seleccion -->
-
-                        </div>
-
-                    </div>
-                    <!-- imagen de accesorios -->
-
                     <!-- prueba de check y radio buttons -->
-
-                    <div class="wrap">
+                    <!-- <div class="row">
 
                       <form class="my_form">
 
@@ -171,28 +132,12 @@
 
                       </form>
 
-                      <!-- <input name="radio_comprobar" id="radio_comprobar" type="button" value="Comprobar" />  -->
 
-                    </div>
 
+                    </div> -->
                     <!-- prueba de check y radio buttons -->
 
-                    <!-- numero de invitados -->
-                    <div class="row">
-
-                        <div class="col-xs-12">
-
-                            <div class="input-group big">
-
-                                <p class="input-group-addon main-color mid">Inserte el numero de invitados</p>
-                                <input class="form-control orange-shadow small" required>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-                    <!-- end numero de invitados -->
+                    <!-- <input name="radio_comprobar" id="radio_comprobar" type="button" value="Comprobar" />  -->
 
                 </div>
                 <!-- end arreglo de tres filas -->
@@ -238,29 +183,37 @@
                     <!-- end imagen dinamica -->
 
                     <!-- botones de imagenes -->
-                    <div class="wrap">
+                    <div class="row">
 
                       <form class="my_form">
 
-                        <div class="checkbox">
+                        <div class="checkbox display-flex">
 
-                          <input type="checkbox" name="checkbox01" id="checkbox01">
-                          <label for="checkbox01">Cierre Perimetral</label>
+                          <div class="">
 
-                          <input type="checkbox" name="checkbox02" id="checkbox02">
-                          <label for="checkbox02">Cenefa</label>
+                            <input type="checkbox" name="checkbox01" id="checkbox01">
+                            <label  class="non-white" for="checkbox01">Cierre Perimetral</label>
 
-                          <input type="checkbox" name="checkbox03" id="checkbox03">
-                          <label for="checkbox03">Cielo falso</label>
+                            <input type="checkbox" name="checkbox02" id="checkbox02">
+                            <label for="checkbox02">Cenefa</label>
 
-                          <input type="checkbox" name="checkbox04" id="checkbox04">
-                          <label for="checkbox04">Cortinas</label>
+                            <input type="checkbox" name="checkbox03" id="checkbox03">
+                            <label for="checkbox03">Cielo falso</label>
 
-                          <input type="checkbox" name="checkbox05" id="checkbox05">
-                          <label for="checkbox05">Pasto</label>
+                          </div>
 
-                          <input type="checkbox" name="checkbox06" id="checkbox06">
-                          <label for="checkbox06">Pie de cortina</label>
+                          <div class="">
+
+                            <input type="checkbox" name="checkbox06" id="checkbox06">
+                            <label class="non-white" for="checkbox06">Pie de cortina</label>
+
+                            <input type="checkbox" name="checkbox04" id="checkbox04">
+                            <label for="checkbox04">Cortinas</label>
+
+                            <input type="checkbox" name="checkbox05" id="checkbox05">
+                            <label for="checkbox05">Pasto</label>
+
+                          </div>
 
                         </div>
 
@@ -386,7 +339,7 @@
                           <label for="checkbox6" onclick="moveImage2()">Iluminacion Ambiental</label>
 
                           <input type="checkbox" name="checkbox7" id="checkbox7">
-                          <label for="checkbox7" onclick="moveImage3()">Escenario</label>
+                          <label for="checkbox7" onclick="moveImage3()">Podium</label>
 
                           <input type="checkbox" name="checkbox8" id="checkbox8">
                           <label for="checkbox8" onclick="moveImage4()">pasillo de alfombra</label>
@@ -395,48 +348,48 @@
 
                       </form>
 
+                      <!-- conjunto de botones -->
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
+                          Escenario <span class="caret"></span>
+                        </button>
 
-                                            <!-- conjunto de botones -->
-                                            <div class="btn-group">
-                                              <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
-                                                Escenario <span class="caret"></span>
-                                              </button>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="#">Solo DJ (2 modulos)</a></li>
+                          <li><a href="#">Oequesta (5 pers.)(10modulos)</a></li>
+                          <li><a href="#">Orquestas (10 pers.)(12 modulos)</a></li>
+                          <li><a href="#">Piso de madera</a></li>
+                        </ul>
+                      </div>
+                      <!-- end conjunto de botones -->
 
-                                              <ul class="dropdown-menu" role="menu">
-                                                <li><a href="#">Acción #1</a></li>
-                                                <li><a href="#">Acción #2</a></li>
-                                                <li><a href="#">Acción #3</a></li>
-                                              </ul>
-                                            </div>
-                                            <!-- end conjunto de botones -->
+                      <!-- conjunto de botones -->
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
+                          Pagoda <span class="caret"></span>
+                        </button>
 
-                                            <!-- conjunto de botones -->
-                                            <div class="btn-group">
-                                              <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
-                                                Pagoda <span class="caret"></span>
-                                              </button>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="#">3x3 metros</a></li>
+                          <li><a href="#">4x4 metros</a></li>
+                          <li><a href="#">5x5 metros</a></li>
+                        </ul>
+                      </div>
+                      <!-- end conjunto de botones -->
 
-                                              <ul class="dropdown-menu" role="menu">
-                                                <li><a href="#">Acción #1</a></li>
-                                                <li><a href="#">Acción #2</a></li>
-                                                <li><a href="#">Acción #3</a></li>
-                                              </ul>
-                                            </div>
-                                            <!-- end conjunto de botones -->
+                      <!-- conjunto de botones -->
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
+                          Accesorios complementarios <span class="caret"></span>
+                        </button>
 
-                                            <!-- conjunto de botones -->
-                                            <div class="btn-group">
-                                              <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
-                                                Resto de elementos sin slider <span class="caret"></span>
-                                              </button>
-
-                                              <ul class="dropdown-menu" role="menu">
-                                                <li><a href="#">Acción #1</a></li>
-                                                <li><a href="#">Acción #2</a></li>
-                                                <li><a href="#">Acción #3</a></li>
-                                              </ul>
-                                            </div>
-                                            <!-- end conjunto de botones -->
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="#">Generador de energia</a></li>
+                          <li><a href="#">Calefaccion</a></li>
+                          <li><a href="#">Ventilador Evaporativo</a></li>
+                        </ul>
+                      </div>
+                      <!-- end conjunto de botones -->
 
                     </div>
                     <!-- end botones de ejemplo -->
@@ -450,7 +403,7 @@
           <!--end paso 1,2,3 -->
 
           <!-- cotizacion -->
-          <div class="col-xs-12 col-md-6">
+          <div class="col-xs-12 col-md-3 col-md-push-1">
 
             <section class="botton quote-fixed">
 
@@ -510,13 +463,11 @@
                   <div class="navbar-header">
                     <div class="group-width input-group navbar-brand">
                       <h2 class="input-group-addon mid main-color">Total</h2>
-                      <input class="form-control small">
+                      <p class="white margin-none">$300.000</p>
                     </div>
                     <button type="button" class="button-align navbar-toggle collapsed" data-toggle="collapse" data-target="#total-button">
                       <span class="sr-only">Toggle navigation</span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
+                      <span class="glyphicon glyphicon-menu-up white"></span>
                     </button>
                   </div>
                   <!--end total -->

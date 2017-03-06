@@ -6,6 +6,31 @@ body,html {
     overflow-x:hidden;
 }
 
+div > label {
+  width:100%;
+}
+
+.margin-top {
+  margin-top: 20px;
+}
+
+.non-white {
+  white-space: nowrap;
+}
+
+.margin-none {
+  margin-top:10px;
+}
+
+.display-flex {
+  display:flex;
+  width:100%;
+}
+
+.text-align {
+  text-align: center;
+}
+
 .main-color {
     /*background-color: #c00232;*/
     background-color:#ff5000;
@@ -17,11 +42,15 @@ body,html {
     color:black;
 }
 
+.margin-bottom {
+  margin-bottom: 20px;
+}
+
 .little-box {
     width: 100%;
     /*background-color: #c00232;*/
     background-color:#ff5000;
-    border-radius: 4px;
+    border-radius: 0px;
     margin: 5px 0;
 }
 
@@ -84,7 +113,7 @@ input {
     background-color:transparent;
     /*border: solid 1px #c00232;*/
     border: solid 1px #ff5000;
-    border-radius:4px;
+    border-radius:0px;
 }
 
 .main-color-buttons:hover{
@@ -119,15 +148,16 @@ input {
       z-index:100;
     }
 
-    .navbar-header {
-      width:50%;
-      border-radius:4px;
+    .navbar-header, .navbar-collapse {
+      width:25%;
+      border-radius:0px;
     }
 }
 /* end laptops and pc */
 
 /* tablet s > l */
 @media (min-width: 426px){
+
     .buttom-image, .buttom-image2 {
         width:120px;
         height:120px;
@@ -144,6 +174,10 @@ input {
 
 /* tablet */
 @media (max-width: 768px){
+
+    .total-width {
+      width:105%;
+    }
 
     .big p {
         font: bold 15px Homenaje;
@@ -169,9 +203,24 @@ input {
 /* mobile l */
 @media (max-width: 425px) {
 
+  .buttom-image, .buttom-image2,
+  .buttom-image3 {
+      border:solid 2px #ff5000;
+      padding:10px;
+    }
+
+    .buttom-image:hover, .buttom-image2:hover,
+    .buttom-image3:hover {
+      background-color:rgba(255,80,0,0.5);
+    }
+
+    .option-button {
+      border-radius:0;
+    }
+
     .the-buttons {
         display:block;
-        width:35%;
+        width:40%;
         margin:0 auto;
     }
 
@@ -267,12 +316,16 @@ input {
 }
 
 .button-align {
-  margin-top:15px;
+  margin-top:10px;
+}
+
+.white {
+  color: white;
 }
 
 .botton {
   width:100%;
-  border-radius:4px;
+  border-radius:0px;
   position:fixed;
   clear:both;
   bottom:-20px;
@@ -405,7 +458,7 @@ input {
 .back-img-paso1 {
   padding: 15px;
   border:solid 2px #ff5000;
-  border-radius:10px;
+  border-radius:0px;
 }
 
 @media (min-width: 1024px){
@@ -492,4 +545,14 @@ input {
   margin-bottom: 100px;
 }
 
+
+@media (min-width: 769px) and (max-width:1024px) {
+  .quote-fixed {
+    clear:both;
+    position:fixed;
+    margin-left:-15px;
+    top:0;
+    z-index:100;
+  }
+}
 /* end cotizacion */
