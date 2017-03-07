@@ -92,26 +92,53 @@ $( '#checkbox06' ).click(function() {
 });
 // end agregar clases a imagenes paso 2
 
-// funcionamiento de botones slider paso 3
+// agregar clase a imaegenes paso 3
 
-function moveImage0(){
-  document.miFormulario.miCheck0.click();
-}
+$( '#checkbox07' ).click(function() {
+    if( $(this).is(':checked') ){
+        $("#img07").addClass("img_hidden");
+    } else {
+        $("#img07").removeClass("img_hidden");
+    }
+});
 
-function moveImage1(){
-  document.miFormulario.miCheck1.click();
-}
+$( '#checkbox08' ).click(function() {
+    if( $(this).is(':checked') ){
+        $("#img08").addClass("img_hidden");
+    } else {
+        $("#img08").removeClass("img_hidden");
+    }
+});
 
-function moveImage2(){
-  document.miFormulario.miCheck2.click();
-}
+$( '#checkbox09' ).click(function() {
+    if( $(this).is(':checked') ){
+        $("#img09").addClass("img_hidden");
+    } else {
+        $("#img09").removeClass("img_hidden");
+    }
+});
 
-function moveImage3(){
-  document.miFormulario.miCheck3.click();
-}
+$( '#checkbox10' ).click(function() {
+    if( $(this).is(':checked') ){
+        $("#img10").addClass("img_hidden");
+    } else {
+        $("#img10").removeClass("img_hidden");
+    }
+});
 
-function moveImage4(){
-  document.miFormulario.miCheck4.click();
-};
+$( '#checkbox11' ).click(function() {
+    if( $(this).is(':checked') ){
+        $("#img11").addClass("img_hidden");
+    } else {
+        $("#img11").removeClass("img_hidden");
+    }
+});
 
-// end funcionamiento botones slider paso 3
+$( '#checkbox12' ).click(function() {
+    if( $(this).is(':checked') ){
+        $("#img12").addClass("img_hidden");
+    } else {
+        $("#img12").removeClass("img_hidden");
+    }
+});
+// end agregar clases a imagenes paso 3
