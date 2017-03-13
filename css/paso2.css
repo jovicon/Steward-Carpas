@@ -1,0 +1,26 @@
+/* estilos paso 2 */
+
+.img_paso2 {
+  position:absolute;
+  display:none;
+  width:88.65%;
+}
+
+.display_img {
+  display:block;
+}
+
+/* queries */
+@media (min-width: 992px){
+  .img_vision {
+    width:90%;
+    margin-left:5%;
+  }
+
+  .img_paso2 {
+  margin-left:0%;
+  width:80%;
+  }
+}
+
+/* end estilos paso 2 */

@@ -1,411 +1,199 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
   <head>
 
     <meta charset="utf-8">
     <meta name="description" content=""/>
     <meta name="keywords" content=""/>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 
-    <link rel="stylesheet" href="css/imports.css">
+    <!-- importing css -->
+    <link rel="stylesheet" href="css/import.css">
 
-    <!-- llamado de mis fonts -->
-    <link rel="stylesheet" type="text/css" href="fonts/myfonts.css"/>
-
-    <title>cotizador carpas steward</title>
+    <title>Jose Contreras' Form</title>
 
   </head>
 
   <body>
 
-      <div class="row">
+    <div id="bg">
 
-        <div class="container">
+      <div class="module">
 
-          <!-- paso 1,2,3 -->
-          <div class="total-width col-xs-12 col-md-5 col-md-push-2">
+        <ul>
+          <li id="paso1" class="tab"><button id="anchor1" class="button-paso activeTab" type="button" name="button" value="paso2">paso1</button></li>
+          <li id="paso2" class="tab" ><button id="anchor2" class="button-paso" type="button" name="button" value="paso2" style="border:none">paso2</button></li>
+          <li id="paso3" class="tab" ><button id="anchor3" class="button-paso" type="button" name="button" value="paso2" style="border:none">paso3</button></li>
+        </ul>
 
-            <!-- paso 1 en la cotizacion de carpas -->
-            <section class="global">
+          <!-- paso 1 -->
+          <form id="form1" class="form">
+            <h2 class="title">Toldo Base</h2>
+            <input type="text" placeholder="First Name" class="textbox" />
+            <input type="text" placeholder="Last Name" class="textbox" />
+            <input type="text" placeholder="Email Address" class="textbox" />
+            <input id="next1" type="button" value="Siguiente" class="button" />
+          </form>
 
-                <!-- arreglo de tres filas/tres columnas -->
-                <div class="">
+          <!-- paso 2 -->
+          <div id="form2" class="form hidden-form">
 
-                    <h2>Paso 1 - Toldo Base</h2>
+            <h2 class="title">Accesorios del Toldo</h2>
 
-                    <!-- barra de mensaje -->
-                    <div class="row little-box">
+            <!--imagen dinamica -->
+            <div class="row">
 
-                        <div class="col-xs-12">
+              <section class="img_vision">
 
-                            <h2 class="center-text">Seleccione el Formato de su Evento y <br> El numero de invitados.</h2>
+                <img class="img-responsive img_paso2" src="img/paso2/cierre.png" id="img01" />
+                <img class="img-responsive img_paso2" src="img/paso2/cenefa.png" id="img02" />
+                <img class="img-responsive img_paso2" src="img/paso2/cielo2.png" id="img03" />
+                <img class="img-responsive img_paso2" src="img/paso2/cortinas.png" id="img04" />
+                <img class="img-responsive img_paso2" src="img/paso2/pasto.png" id="img05" />
+                <img class="img-responsive img_paso2" src="img/paso2/pie_cortina.png" id="img06" />
+                <img class="img-responsive" src="img/paso2/imagen_base.png" />
 
-                        </div>
+              </section>
 
-                    </div>
-                    <!-- end barra de mensaje -->
+            </div>
+            <!-- end imagen dinamica -->
 
-                    <!-- numero de invitados -->
-                    <div class="row margin-bottom">
+            <!-- botones de imagenes -->
+            <div class="row">
 
-                        <div class="col-xs-12">
+              <form class="my_form">
 
-                            <div class="input-group big">
+                <div class="checkbox display-flex">
 
-                                <p class="input-group-addon main-color mid">Inserte el numero de invitados</p>
-                                <input class="form-control orange-shadow small" required>
+                  <div>
 
-                            </div>
+                    <input type="checkbox" name="checkbox01" id="checkbox01">
+                    <label  class="non-white" for="checkbox01">Cierre Perimetral</label>
 
-                        </div>
+                    <input type="checkbox" name="checkbox02" id="checkbox02">
+                    <label class="non-white" for="checkbox02">Cenefa</label>
 
-                    </div>
-                    <!-- end numero de invitados -->
+                    <input type="checkbox" name="checkbox03" id="checkbox03">
+                    <label class="non-white" for="checkbox03">Cielo falso</label>
 
-                    <!-- botones de seleccion -->
-                    <div class="the-buttons">
-
-                        <div class="row margin-top">
-
-                            <div class="col-xs-12 col-md-12 option-button">
-
-                                <input id="boton01" class="buttom-image" type="image" src="img/paso1/de_pie.png" value="coctel_pie"/>
-                                <p class="text-align">Coctel de pie</p>
-
-                            </div>
-
-                        </div>
-
-                        <div class="row margin-top">
-
-                            <div class="col-xs-12 col-md-12 option-button">
-
-                                <input id="boton02" class="buttom-image2" type="image" src="img/paso1/silla_con_mesa.png" value="mesa"/>
-                                <p class="text-align">Mesa</p>
-
-                            </div>
-
-                        </div>
-
-                        <div class="row margin-top option-button">
-
-                            <div class="col-xs-12">
-
-                                <input id="boton03" class="buttom-image3" type="image" src="img/paso1/silla_sin_mesa.png" value="conferencia"/>
-                                <p class="text-align">Conferencia</p>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-                    <!-- end botones de seleccion -->
-
-
-                </div>
-                <!-- end arreglo de tres filas -->
-
-            </section>
-            <!-- end paso 1 en la cotizacion de carpas -->
-
-            <!-- paso 2 en la cotizacion de carpas -->
-            <section>
-
-                <div class="">
-
-                    <h2>Paso 2 - Accesorios del Toldo</h2>
-
-                    <!-- barra de mensaje -->
-                    <div class="row little-box">
-
-                        <div class="col-xs-12">
-
-                            <h2 class="center-text">Seleccione uno o mas accesorios</h2>
-
-                        </div>
-
-                    </div>
-                    <!-- end barra de mensaje -->
-
-                    <!--imagen dinamica -->
-                    <div class="row">
-
-                      <section class="img_vision">
-
-                        <img class="img-responsive img_paso2 perimetral" src="img/paso2/cierre.png" id="img01"/>
-                        <img class="img-responsive img_paso2" src="img/paso2/cenefa.png" id="img02" />
-                        <img class="img-responsive img_paso2" src="img/paso2/cielo2.png" id="img03"/>
-                        <img class="img-responsive img_paso2" src="img/paso2/cortinas.png" id="img04"/>
-                        <img class="img-responsive img_paso2" src="img/paso2/pasto.png" id="img05"/>
-                        <img class="img-responsive img_paso2 bas_right" src="img/paso2/pie_cortina.png" id="img06"/>
-                        <img class="img-responsive" src="img/paso2/imagen_base.png" />
-
-                      </section>
-
-                    </div>
-                    <!-- end imagen dinamica -->
-
-                    <!-- botones de imagenes -->
-                    <div class="row">
-
-                      <form class="my_form">
-
-                        <div class="checkbox display-flex">
-
-                          <div class="">
-
-                            <input type="checkbox" name="checkbox01" id="checkbox01">
-                            <label  class="non-white" for="checkbox01">Cierre Perimetral</label>
-
-                            <input type="checkbox" name="checkbox02" id="checkbox02">
-                            <label for="checkbox02">Cenefa</label>
-
-                            <input type="checkbox" name="checkbox03" id="checkbox03">
-                            <label for="checkbox03">Cielo falso</label>
-
-                          </div>
-
-                          <div class="">
-
-                            <input type="checkbox" name="checkbox06" id="checkbox06">
-                            <label class="non-white" for="checkbox06">Pie de cortina</label>
-
-                            <input type="checkbox" name="checkbox04" id="checkbox04">
-                            <label for="checkbox04">Cortinas</label>
-
-                            <input type="checkbox" name="checkbox05" id="checkbox05">
-                            <label for="checkbox05">Pasto</label>
-
-                          </div>
-
-                        </div>
-
-                      </form>
-
-                    </div>
-                    <!-- end botones de imagenes -->
-
-
-                </div>
-
-            </section>
-            <!-- end paso 2 en la cotizacion de carpas -->
-
-            <!-- paso 3 en la cotizacion de carpas -->
-            <section class="last-margin">
-
-                <div style="clear:both;" class="avoid-z-index">
-
-                    <h2>Paso 3 - Complementos</h2>
-
-                    <!-- barra de mensaje -->
-                    <div class="row little-box">
-
-                        <div class="col-xs-12">
-
-                            <h2 class="center-text">Seleccione uno o mas complementos</h2>
-
-                        </div>
-
-                    </div>
-                    <!--end barra de mensaje -->
-
-                    <!-- imagen dinamica -->
-                    <div class="row">
-
-                      <section class="img_vision">
-
-                        <img class="img-responsive img_paso2" src="img/paso2/cierre.png" id="img07"/>
-                        <img class="img-responsive img_paso2" src="img/paso2/cenefa.png" id="img08" />
-                        <img class="img-responsive img_paso2" src="img/paso2/cielo2.png" id="img09"/>
-                        <img class="img-responsive img_paso2" src="img/paso2/cortinas.png" id="img10"/>
-                        <img class="img-responsive img_paso2" src="img/paso2/pasto.png" id="img11"/>
-                        <img class="img-responsive img_paso2 bas_right" src="img/paso2/pie_cortina.png" id="img12"/>
-                        <img class="img-responsive" src="img/paso2/imagen_base.png" />
-
-                      </section>
-
-                    </div>
-                    <!-- end imagen dinamica -->
-
-                    <!-- conjunto de botones -->
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
-                        Escenario <span class="caret"></span>
-                      </button>
-
-                      <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">Solo DJ (2 modulos)</a></li>
-                        <li><a href="#">Oequesta (5 pers.)(10modulos)</a></li>
-                        <li><a href="#">Orquestas (10 pers.)(12 modulos)</a></li>
-                      </ul>
-                    </div>
-                    <!-- end conjunto de botones -->
-
-                    <!-- conjunto de botones -->
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
-                        Pagoda <span class="caret"></span>
-                      </button>
-
-                      <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">3x3 metros</a></li>
-                        <li><a href="#">4x4 metros</a></li>
-                        <li><a href="#">5x5 metros</a></li>
-                      </ul>
-                    </div>
-                    <!-- end conjunto de botones -->
-
-                    <!-- conjunto de botones -->
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
-                        Accesorios complementarios <span class="caret"></span>
-                      </button>
-
-                      <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">Generador de energia</a></li>
-                        <li><a href="#">Calefaccion</a></li>
-                        <li><a href="#">Ventilador Evaporativo</a></li>
-                      </ul>
-                    </div>
-                    <!-- end conjunto de botones -->
-
-                    <!-- botones de imagenes -->
-                    <div class="row">
-
-                      <form class="my_form">
-
-                        <div class="checkbox display-flex">
-
-                          <div class="">
-
-                            <input type="checkbox" name="checkbox07" id="checkbox07">
-                            <label  class="non-white" for="checkbox07">Carpa de Servicio</label>
-
-                            <input type="checkbox" name="checkbox08" id="checkbox08">
-                            <label class="non-white" for="checkbox08">Pista de Baile</label>
-
-                            <input type="checkbox" name="checkbox09" id="checkbox09">
-                            <label class="non-white" for="checkbox09">Iluminacion Ambiental</label>
-
-                          </div>
-
-                          <div class="">
-
-                            <input type="checkbox" name="checkbox10" id="checkbox10">
-                            <label class="non-white" for="checkbox10">Podium</label>
-
-                            <input type="checkbox" name="checkbox11" id="checkbox11">
-                            <label class="non-white" for="checkbox11">Alfombra</label>
-
-                            <input type="checkbox" name="checkbox12" id="checkbox12">
-                            <label class="non-white" for="checkbox12">Escenario</label>
-
-                          </div>
-
-                        </div>
-
-                      </form>
-
-                    </div>
-                    <!-- end botones de imagenes -->
-
-                </div>
-
-            </section>
-            <!-- paso 3 en la cotizacion de carpas -->
-
-          </div>
-          <!--end paso 1,2,3 -->
-
-          <!-- cotizacion -->
-          <div class="col-xs-12 col-md-3 col-md-push-2">
-
-            <section class="botton quote-fixed">
-
-              <nav class="navbar navbar-default" role="navigation">
-                <div class="container">
-
-                  <div class="collapse navbar-collapse" id="total-button">
-                    <h2>Resumen de cotizacion</h2>
-                    <ul class="nav navbar-nav">
-                      <li>
-
-                        <div class="input-group items_cotizacion">
-
-                            <p class="input-group-addon mid main-color">Paso 1</p>
-                            <input class="form-control small-p">
-
-                        </div>
-                        <div class="">
-                          <p>detalles paso 1</p>
-                        </div>
-
-                      </li>
-
-                      <li>
-
-                        <div class="input-group items_cotizacion">
-
-                            <p class="input-group-addon mid main-color">Paso 2</p>
-                            <input class="form-control small">
-
-                        </div>
-
-                        <div class="">
-                          <p>detalles paso 2</p>
-                        </div>
-
-                      </li>
-
-                      <li>
-
-                        <div class="input-group items_cotizacion">
-
-                            <p class="input-group-addon mid main-color">Paso 3</p>
-                            <input class="form-control small">
-
-                        </div>
-
-                        <div class="">
-                          <p>detalles paso 3</p>
-                        </div>
-
-                      </li>
-                    </ul>
                   </div>
 
-                  <!-- total -->
-                  <div class="navbar-header">
-                    <div class="group-width input-group navbar-brand">
-                      <h2 class="input-group-addon mid main-color">Total</h2>
-                      <p class="white margin-none">$300.000</p>
-                    </div>
-                    <button type="button" class="button-align navbar-toggle collapsed" data-toggle="collapse" data-target="#total-button">
-                      <span class="sr-only">Toggle navigation</span>
-                      <span class="glyphicon glyphicon-menu-up white"></span>
-                    </button>
+                  <div>
+
+                    <input type="checkbox" name="checkbox06" id="checkbox06">
+                    <label class="non-white" class="non-white" for="checkbox06">Pie de cortina</label>
+
+                    <input type="checkbox" name="checkbox04" id="checkbox04">
+                    <label class="non-white" for="checkbox04">Cortinas</label>
+
+                    <input type="checkbox" name="checkbox05" id="checkbox05">
+                    <label class="non-white" for="checkbox05">Pasto</label>
+
                   </div>
-                  <!--end total -->
 
                 </div>
-              </nav>
 
-            </section>
+              </form>
 
+            </div>
+            <!-- end botones de imagenes -->
 
+            <!-- botones next/after -->
+            <form>
+
+              <input id="after" type="button" value="Anterior" class="button button2" />
+              <input id="next2" type="button" value="Siguiente" class="button button2" />
+
+            </form>
+            <!-- end botones next/after -->
 
           </div>
-          <!-- end cotizacion -->
 
-        </div>
+          <!-- paso 3 -->
+          <div id="form3" class="form hidden-form">
+
+            <h2 class="title">Complementos</h2>
+
+            <!-- imagen dinamica -->
+            <div class="row">
+
+              <section class="img_vision">
+
+                <img class="img-responsive img_paso2" src="img/paso2/cierre.png" id="img07"/>
+                <img class="img-responsive img_paso2" src="img/paso2/cenefa.png" id="img08" />
+                <img class="img-responsive img_paso2" src="img/paso2/cielo2.png" id="img09"/>
+                <img class="img-responsive img_paso2" src="img/paso2/cortinas.png" id="img10"/>
+                <img class="img-responsive img_paso2" src="img/paso2/pasto.png" id="img11"/>
+                <img class="img-responsive img_paso2 bas_right" src="img/paso2/pie_cortina.png" id="img12"/>
+                <img class="img-responsive" src="img/paso2/imagen_base.png" />
+
+              </section>
+
+            </div>
+            <!-- end imagen dinamica -->
+
+            <!-- botones de imagenes -->
+            <div class="row">
+
+              <form class="my_form">
+
+                <div class="checkbox display-flex">
+
+                  <div class="">
+
+                    <input type="checkbox" name="checkbox07" id="checkbox07">
+                    <label  class="non-white" for="checkbox07">Carpa de Servicio</label>
+
+                    <input type="checkbox" name="checkbox08" id="checkbox08">
+                    <label class="non-white" for="checkbox08">Pista de Baile</label>
+
+                    <input type="checkbox" name="checkbox09" id="checkbox09">
+                    <label class="non-white" for="checkbox09">Iluminacion Ambiental</label>
+
+                  </div>
+
+                  <div class="">
+
+                    <input type="checkbox" name="checkbox10" id="checkbox10">
+                    <label class="non-white" for="checkbox10">Podium</label>
+
+                    <input type="checkbox" name="checkbox11" id="checkbox11">
+                    <label class="non-white" for="checkbox11">Alfombra</label>
+
+                    <input type="checkbox" name="checkbox12" id="checkbox12">
+                    <label class="non-white" for="checkbox12">Escenario</label>
+
+                  </div>
+
+                </div>
+
+              </form>
+
+            </div>
+            <!-- end botones de imagenes -->
+
+            <form>
+
+              <input id="after2" type="button" value="Anterior" class="button" />
+
+            </form>
+
+          </div>
 
       </div>
 
+    </div>
 
-      <script src="js/jquery-3.1.1.js"/> </script>
-      <script src="js/bootstrap.min.js"/> </script>
-      <script src="js/scripts.js" type="text/javascript"></script>
+    <!-- bootstrap & jQuery -->
+    <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <!-- end bootstrap & jQuery -->
+
+    <!-- my scripts -->
+    <script src="js/scripts.js" type="text/javascript"></script>
+    <!-- end my scripts -->
+
   </body>
+
 </html>

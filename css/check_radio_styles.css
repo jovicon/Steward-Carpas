@@ -13,6 +13,11 @@ body {
   background:#fff;
 }
 
+
+.non-white {
+  white-space: nowrap;
+}
+
 .wrap {
   width:90%;
   max-width: 1000px;

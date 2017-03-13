@@ -1,0 +1,30 @@
+/* import: carpas */
+
+/* llamado de reset */
+@import url("reset.css");
+
+/* importando fonts desde google fonts */
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow');
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
+
+/* llamado de bootstrap */
+@import url("bootstrap.css");
+@import url("bootstrap.min.css");
+
+/* llamado de mis estilos */
+@import url("styles.css");
+
+/* llamado de los estilos del formulario */
+@import url("form-styles.css");
+
+/* paso 2 */
+@import url("paso2.css");
+
+/* llamado de el estilos de los checkboxs */
+@import url("check_radio_styles.css");
+
+/* mis queries */
+@import url("queries.css");
+
+/* end import: carpas */
