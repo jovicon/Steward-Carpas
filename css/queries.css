@@ -1,5 +1,27 @@
 @media (max-width: 425px) {
+  #bg {
+    top:0;
+    border:0;
+  }
+
   .module {
-    width:100%;
+    width:100vw;
+    top:0%;
+  }
+
+  .form {
+    padding: 00px;
+  }
+
+  .display-flex {
+    flex-direction: column;
+  }
+
+  label.non-white {
+    width: 100%;
+  }
+
+  .my_form > div {
+    padding:0;
   }
 }

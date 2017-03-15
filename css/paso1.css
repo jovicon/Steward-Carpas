@@ -1,0 +1,30 @@
+/* estilos paso 1 */
+
+.non-border{
+  border:none;
+  border-radius: 0;
+}
+
+.number-left {
+  background-color:#ff5000;
+  color:white;
+  font-weight: bold;
+}
+
+.number-right:focus{
+  border-color:#ff5000;
+  box-shadow: inset 0 1px rgba(255,80,0,0.075);
+}
+
+.margin-top{
+  margin-top:5%;
+}
+
+.margin-hor > input {
+  margin-left: 25%;
+  width:50%;
+}
+
+.margin-hor > p {
+  text-align: center;
+}

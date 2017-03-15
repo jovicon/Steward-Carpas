@@ -22,17 +22,38 @@
       <div class="module">
 
         <ul>
-          <li id="paso1" class="tab"><button id="anchor1" class="button-paso activeTab" type="button" name="button" value="paso2">paso1</button></li>
-          <li id="paso2" class="tab" ><button id="anchor2" class="button-paso" type="button" name="button" value="paso2" style="border:none">paso2</button></li>
-          <li id="paso3" class="tab" ><button id="anchor3" class="button-paso" type="button" name="button" value="paso2" style="border:none">paso3</button></li>
+          <li id="paso1" class="tab"><button id="anchor1" class="button-paso activeTab" type="button" name="button" value="paso2">paso 1</button></li>
+          <li id="paso2" class="tab" ><button id="anchor2" class="button-paso" type="button" name="button" value="paso2" style="border:none">paso 2</button></li>
+          <li id="paso3" class="tab" ><button id="anchor3" class="button-paso" type="button" name="button" value="paso2" style="border:none">paso 3</button></li>
         </ul>
 
           <!-- paso 1 -->
           <form id="form1" class="form">
             <h2 class="title">Toldo Base</h2>
-            <input type="text" placeholder="First Name" class="textbox" />
-            <input type="text" placeholder="Last Name" class="textbox" />
-            <input type="text" placeholder="Email Address" class="textbox" />
+
+            <!-- numero de invitados -->
+            <div class="input-group non-border">
+
+                <p class="input-group-addon number-left">Inserte el numero de invitados</p>
+                <input class="form-control number-right" required>
+
+            </div>
+
+            <!-- botones de seleccion -->
+            <div class="margin-top margin-hor">
+
+              <input id="boton01" class="buttom-image" type="image" src="img/paso1/de_pie.png" value="coctel_pie" required/>
+              <p class="text-align">Coctel de pie</p>
+
+              <input id="boton02" class="buttom-image2" type="image" src="img/paso1/silla_con_mesa.png" value="mesa" required/>
+              <p class="text-align">Mesa</p>
+
+              <input id="boton03" class="buttom-image3" type="image" src="img/paso1/silla_sin_mesa.png" value="conferencia" required/>
+              <p class="text-align">Conferencia</p>
+
+            </div>
+            <!-- end botones de seleccion -->
+
             <input id="next1" type="button" value="Siguiente" class="button" />
           </form>
 
@@ -42,7 +63,7 @@
             <h2 class="title">Accesorios del Toldo</h2>
 
             <!--imagen dinamica -->
-            <div class="row">
+            <div class="">
 
               <section class="img_vision">
 
@@ -60,7 +81,7 @@
             <!-- end imagen dinamica -->
 
             <!-- botones de imagenes -->
-            <div class="row">
+            <div class="">
 
               <form class="my_form">
 
@@ -116,7 +137,7 @@
             <h2 class="title">Complementos</h2>
 
             <!-- imagen dinamica -->
-            <div class="row">
+            <div class="">
 
               <section class="img_vision">
 
@@ -125,7 +146,7 @@
                 <img class="img-responsive img_paso2" src="img/paso2/cielo2.png" id="img09"/>
                 <img class="img-responsive img_paso2" src="img/paso2/cortinas.png" id="img10"/>
                 <img class="img-responsive img_paso2" src="img/paso2/pasto.png" id="img11"/>
-                <img class="img-responsive img_paso2 bas_right" src="img/paso2/pie_cortina.png" id="img12"/>
+                <img class="img-responsive img_paso2" src="img/paso2/pie_cortina.png" id="img12"/>
                 <img class="img-responsive" src="img/paso2/imagen_base.png" />
 
               </section>
@@ -134,7 +155,7 @@
             <!-- end imagen dinamica -->
 
             <!-- botones de imagenes -->
-            <div class="row">
+            <div class="">
 
               <form class="my_form">
 
@@ -167,6 +188,48 @@
                   </div>
 
                 </div>
+
+                <!-- conjunto de botones -->
+                <div class="btn-group">
+                  <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
+                    Escenario <span class="caret"></span>
+                  </button>
+
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Solo DJ (2 modulos)</a></li>
+                    <li><a href="#">Oequesta (5 pers.)(10modulos)</a></li>
+                    <li><a href="#">Orquestas (10 pers.)(12 modulos)</a></li>
+                  </ul>
+                </div>
+                <!-- end conjunto de botones -->
+
+                <!-- conjunto de botones -->
+                <div class="btn-group">
+                  <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
+                    Pagoda <span class="caret"></span>
+                  </button>
+
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">3x3 metros</a></li>
+                    <li><a href="#">4x4 metros</a></li>
+                    <li><a href="#">5x5 metros</a></li>
+                  </ul>
+                </div>
+                <!-- end conjunto de botones -->
+
+                <!-- conjunto de botones -->
+                <div class="btn-group">
+                  <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
+                    Accesorios complementarios <span class="caret"></span>
+                  </button>
+
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Generador de energia</a></li>
+                    <li><a href="#">Calefaccion</a></li>
+                    <li><a href="#">Ventilador Evaporativo</a></li>
+                  </ul>
+                </div>
+                <!-- end conjunto de botones -->
 
               </form>
 

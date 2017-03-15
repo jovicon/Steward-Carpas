@@ -13,13 +13,25 @@
 /* queries */
 @media (min-width: 992px){
   .img_vision {
-    width:90%;
+    width:85%;
     margin-left:5%;
   }
 
   .img_paso2 {
   margin-left:0%;
-  width:80%;
+  width:70%;
+  }
+}
+
+@media (max-width: 425px) {
+  .img_vision {
+    width:100%;
+    margin-left:0%;
+  }
+
+  .img_paso2 {
+  margin-left:0%;
+  width:100%;
   }
 }
 

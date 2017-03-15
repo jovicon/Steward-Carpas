@@ -18,8 +18,14 @@
 /* llamado de los estilos del formulario */
 @import url("form-styles.css");
 
+/* paso 1*/
+@import url("paso1.css");
+
 /* paso 2 */
 @import url("paso2.css");
+
+/* paso 3 */
+@import url("paso3.css");
 
 /* llamado de el estilos de los checkboxs */
 @import url("check_radio_styles.css");

@@ -1,0 +1,10 @@
+/* paso 3 */
+
+.btn-group, .btn {
+  width:100%;
+  margin-bottom: 2.5%;
+}
+
+.btn-warning {
+  background-color: #ff5000;
+}
