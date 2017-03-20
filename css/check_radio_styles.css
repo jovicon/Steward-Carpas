@@ -29,6 +29,10 @@ body {
   clear:both;
 }
 
+.my_form {
+  margin-top:15%;;
+}
+
 .my_form > div {
   padding:20px;
 }

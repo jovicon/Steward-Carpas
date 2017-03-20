@@ -3,7 +3,9 @@
 .img_paso2 {
   position:absolute;
   display:none;
-  width:88.65%;
+  margin-left:-4.8%;
+  width:100%;
+  z-index: 50;
 }
 
 .display_img {
@@ -11,7 +13,7 @@
 }
 
 /* queries */
-@media (min-width: 992px){
+/*@media (min-width: 992px){
   .img_vision {
     width:85%;
     margin-left:5%;
@@ -21,7 +23,7 @@
   margin-left:0%;
   width:70%;
   }
-}
+}*/
 
 @media (max-width: 425px) {
   .img_vision {
@@ -30,7 +32,7 @@
   }
 
   .img_paso2 {
-  margin-left:0%;
+  margin-left:-4.8%;
   width:100%;
   }
 }

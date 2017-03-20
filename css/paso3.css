@@ -2,7 +2,8 @@
 
 .btn-group, .btn {
   width:100%;
-  margin-bottom: 2.5%;
+  margin-bottom: 5px;
+  padding:0!important;
 }
 
 .btn-warning {
