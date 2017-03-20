@@ -27,6 +27,9 @@
 /* paso 3 */
 @import url("paso3.css");
 
+/* cotizacion */
+@import url("cotizacion.css");
+
 /* llamado de el estilos de los checkboxs */
 @import url("check_radio_styles.css");
 
