@@ -1,212 +1,142 @@
-/*jslint browser: true*/
-/*global $, jQuery, alert*/
+// my scripts
 
-//movimiento de formulario con botones
-// paso1
-$('#anchor1').focus(function(){
-  "use strict";
-  if ($(this).is(':focus')) {
-    $("#form1").addClass("display-form");
-    $("#form1").removeClass("hidden-form");
-    $("#anchor1").addClass("activeTab");
-    $("#form2").addClass("hidden-form");
-    $("#form2").removeClass("display-form");
-    $("#anchor2").removeClass("activeTab");
-    $("#form3").addClass("hidden-form");
-    $("#form3").removeClass("display-form");
-    $("#anchor3").removeClass("activeTab");
+// paso 1
+$( '#personas1' ).click(function() {
+    if( $(this).is(':focus') ){
+        $("#numeroresu").removeClass("without");
+    } else {
+
+    }
+});
+
+$(document).ready(function () {
+    $("#personas1").keyup(function () {
+        var value = $(this).val();
+        $("#personas2").val(value);
+    });
+});
+
+$("#r1").click(function(){
+  if ($(this).is(':checked')){
+    $("#r1-img").addClass("r-focus");
+    $("#r2-img").removeClass("r-focus");
+    $("#r3-img").removeClass("r-focus");
+    $("#respas11").removeClass("without");
+    $("#respas12").addClass("without");
+    $("#respas13").addClass("without");
+    $("#respaslabel11").removeClass("without");
+    $("#respaslabel12").addClass("without");
+    $("#respaslabel13").addClass("without");
   }
 });
 
-// paso2
-$('#anchor2').focus(function(){
-  "use strict";
-  if ($(this).is(':focus')) {
-    $("#form1").addClass("hidden-form");
-    $("#form1").removeClass("display-form");
-    $("#anchor1").removeClass("activeTab");
-    $("#form2").addClass("display-form");
-    $("#form2").removeClass("hidden-form");
-    $("#anchor2").addClass("activeTab");
-    $("#form3").addClass("hidden-form");
-    $("#form3").removeClass("display-form");
-    $("#anchor3").removeClass("activeTab");
+$("#r2").click(function(){
+  if ($(this).is(':checked')){
+    $("#r1-img").removeClass("r-focus");
+    $("#r2-img").addClass("r-focus");
+    $("#r3-img").removeClass("r-focus");
+    $("#respas12").removeClass("without");
+    $("#respas11").addClass("without");
+    $("#respas13").addClass("without");
+    $("#respaslabel11").addClass("without");
+    $("#respaslabel12").removeClass("without");
+    $("#respaslabel13").addClass("without");
   }
 });
 
-// paso3
-$('#anchor3').focus(function(){
-  "use strict";
-  if ($(this).is(':focus')) {
-    $("#form1").addClass("hidden-form");
-    $("#form1").removeClass("display-form");
-    $("#anchor1").removeClass("activeTab");
-    $("#form2").removeClass("display-form");
-    $("#form2").addClass("hidden-form");
-    $("#anchor2").removeClass("activeTab");
-    $("#form3").addClass("display-form");
-    $("#form3").removeClass("hidden-form");
-    $("#anchor3").addClass("activeTab");
+$("#r3").click(function(){
+  if ($(this).is(':checked')){
+    $("#r1-img").removeClass("r-focus");
+    $("#r2-img").removeClass("r-focus");
+    $("#r3-img").addClass("r-focus");
+    $("#respas13").removeClass("without");
+    $("#respas11").addClass("without");
+    $("#respas12").addClass("without");
+    $("#respaslabel11").addClass("without");
+    $("#respaslabel12").addClass("without");
+    $("#respaslabel13").removeClass("without");
   }
 });
 
-// funcionamiento boton next form1
-$('#next1').click(function () {
-  "use strict";
-  if ($(this).is(':focus')) {
-    $("#form1").addClass("hidden-form");
-    $("#form1").removeClass("display-form");
-    $("#anchor1").removeClass("activeTab");
-    $("#form2").addClass("display-form");
-    $("#form2").removeClass("hidden-form");
-    $("#anchor2").addClass("activeTab");
-  }
-});
 
-// funcionamiento boton next form2
-$('#next2').click(function () {
-  "use strict";
-  if ($(this).is(':focus')) {
-    $("#form2").removeClass("display-form");
-    $("#form2").addClass("hidden-form");
-    $("#anchor2").removeClass("activeTab");
-    $("#form3").addClass("display-form");
-    $("#form3").removeClass("hidden-form");
-    $("#anchor3").addClass("activeTab");
-  }
-});
+// paso 2
 
-// funcionamiento boton after form2
-$('#after').click(function () {
-  "use strict";
-  if ($(this).is(':focus')) {
-    $("#form1").addClass("display-form");
-    $("#form1").removeClass("hidden-form")
-    $("#form2").addClass("hidden-form");
-    $("#form2").removeClass("display-form");
-    $("#anchor1").addClass("activeTab");
-    $("#anchor2").removeClass("activeTab");
-
-  }
-});
-
-// funcionamiento boton after form3
-$('#after2').click(function () {
-  "use strict";
-  if ($(this).is(':focus')) {
-    $("#form2").addClass("display-form");
-    $("#form2").removeClass("hidden-form");
-    $("#anchor2").addClass("activeTab");
-    $("#form3").addClass("hidden-form");
-    $("#form3").removeClass("display-form");
-    $("#anchor3").removeClass("activeTab");
-  }
-});
-
-// end movimiento de formulario con botones
-
-// movimiento de imagenes con botones
-
-// movimiento de paso 2
-
-$( '#checkbox01' ).click(function() {
+$( '#check11' ).click(function() {
     if( $(this).is(':checked') ){
-        $("#img01").addClass("display_img");
+        $("#img1paso2").addClass("display_img");
+        $("#respas21").removeClass("without");
+        $("#respaslabel21").removeClass("without");
     } else {
-        $("#img01").removeClass("display_img");
+        $("#img1paso2").removeClass("display_img");
+        $("#respas21").addClass("without");
+        $("#respaslabel21").addClass("without");
     }
 });
 
-$( '#checkbox02' ).click(function() {
+$( '#check12' ).click(function() {
     if( $(this).is(':checked') ){
-        $("#img02").addClass("display_img");
+        $("#img2paso2").addClass("display_img");
+        $("#respas22").removeClass("without");
+        $("#respaslabel22").removeClass("without");
     } else {
-        $("#img02").removeClass("display_img");
+        $("#img2paso2").removeClass("display_img");
+        $("#respas22").addClass("without");
+        $("#respaslabel22").addClass("without");
     }
 });
 
-$( '#checkbox03' ).click(function() {
+$( '#check13' ).click(function() {
     if( $(this).is(':checked') ){
-        $("#img03").addClass("display_img");
+        $("#img3paso2").addClass("display_img");
+        $("#respas23").removeClass("without");
+        $("#respaslabel23").removeClass("without");
     } else {
-        $("#img03").removeClass("display_img");
+        $("#img3paso2").removeClass("display_img");
+        $("#respas23").addClass("without");
+        $("#respaslabel23").addClass("without");
     }
 });
 
-$( '#checkbox04' ).click(function() {
+$( '#check14' ).click(function() {
     if( $(this).is(':checked') ){
-        $("#img04").addClass("display_img");
+        $("#img4paso2").addClass("display_img");
+        $("#respas24").removeClass("without");
+        $("#respaslabel24").removeClass("without");
     } else {
-        $("#img04").removeClass("display_img");
+        $("#img4paso2").removeClass("display_img");
+        $("#respas24").addClass("without");
+        $("#respaslabel24").addClass("without");
     }
 });
 
-$( '#checkbox05' ).click(function() {
+$( '#check15' ).click(function() {
     if( $(this).is(':checked') ){
-        $("#img05").addClass("display_img");
+        $("#img5paso2").addClass("display_img");
+        $("#respas25").removeClass("without");
+        $("#respaslabel25").removeClass("without");
     } else {
-        $("#img05").removeClass("display_img");
+        $("#img5paso2").removeClass("display_img");
+        $("#respas25").addClass("without");
+        $("#respaslabel25").addClass("without");
     }
 });
 
-$( '#checkbox06' ).click(function() {
-    if( $(this).is(':checked') ){
-        $("#img06").addClass("display_img");
-    } else {
-        $("#img06").removeClass("display_img");
-    }
-});
-// end agregar clases a imagenes paso 2
+//total
 
-// agregar clase a imaegenes paso 3
+function sumar (valor) {
+    var total = 0;
+    valor = parseInt(valor); // Convertir el valor a un entero (número).
 
-$( '#checkbox07' ).click(function() {
-    if( $(this).is(':checked') ){
-        $("#img07").addClass("display_img");
-    } else {
-        $("#img07").removeClass("display_img");
-    }
-});
+    total = document.getElementById('spTotal').innerHTML;
 
-$( '#checkbox08' ).click(function() {
-    if( $(this).is(':checked') ){
-        $("#img08").addClass("display_img");
-    } else {
-        $("#img08").removeClass("display_img");
-    }
-});
+    // Aquí valido si hay un valor previo, si no hay datos, le pongo un cero "0".
+    total = (total == null || total == undefined || total == "") ? 0 : total;
 
-$( '#checkbox09' ).click(function() {
-    if( $(this).is(':checked') ){
-        $("#img09").addClass("display_img");
-    } else {
-        $("#img09").removeClass("display_img");
-    }
-});
+    /* Esta es la suma. */
+    total = (parseInt(total) + parseInt(valor));
 
-$( '#checkbox10' ).click(function() {
-    if( $(this).is(':checked') ){
-        $("#img10").addClass("display_img");
-    } else {
-        $("#img10").removeClass("display_img");
-    }
-});
+    // Colocar el resultado de la suma en el control "span".
+    document.getElementById('spTotal').innerHTML = total;
+}
 
-$( '#checkbox11' ).click(function() {
-    if( $(this).is(':checked') ){
-        $("#img11").addClass("display_img");
-    } else {
-        $("#img11").removeClass("display_img");
-    }
-});
-
-$( '#checkbox12' ).click(function() {
-    if( $(this).is(':checked') ){
-        $("#img12").addClass("display_img");
-    } else {
-        $("#img12").removeClass("display_img");
-    }
-});
-// end agregar clases a imagenes paso 3
-
-// end movimiento de imagenes con botones
+// end my scripts

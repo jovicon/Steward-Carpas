@@ -1,0 +1,28 @@
+/* imports css */
+
+/* reset */
+@import url("reset.css");
+
+/* fonts */
+@import url("fonts.css");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/* bootstrap */
+@import url("bootstrap.min.css");
+
+/* main styles */
+@import url("styles.css");
+
+/* queries */
+@import url("queries.css");
+
+/* pasos */
+@import url("pasos.css");
+
+/* estilos de cada paso */
+@import url("paso1.css");
+@import url("paso2.css");
+@import url("paso3.css");
+
+/* resumen */
+@import url("resumen.css")

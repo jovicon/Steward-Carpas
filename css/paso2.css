@@ -1,10 +1,16 @@
 /* estilos paso 2 */
 
-.img_paso2 {
+/* imagenes */
+.base {
+  position:absolute;
+  width:86.4%;
+  clear:both;
+}
+
+.img-paso2 {
   position:absolute;
   display:none;
-  margin-left:-4.8%;
-  width:100%;
+  width:86.4%;
   z-index: 50;
 }
 
@@ -12,29 +18,42 @@
   display:block;
 }
 
-/* queries */
-/*@media (min-width: 992px){
-  .img_vision {
-    width:85%;
-    margin-left:5%;
-  }
+/* botones */
 
-  .img_paso2 {
-  margin-left:0%;
-  width:70%;
-  }
-}*/
-
-@media (max-width: 425px) {
-  .img_vision {
-    width:100%;
-    margin-left:0%;
-  }
-
-  .img_paso2 {
-  margin-left:-4.8%;
-  width:100%;
-  }
+input[type="checkbox"]{
+ display: none;
 }
 
-/* end estilos paso 2 */
+input[type="checkbox"] + label {
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label {
+  outline: none;
+  background-color: rgba(255,80,0,0.8);
+  color:white;
+}
+
+.sel-button {
+  width:19.5%;
+  height:5rem;
+  vertical-align: middle;
+  text-align: center;
+  background-color: white;
+  border:solid 1px rgba(204,204,204,0.8);
+  font-size: 1.5rem;
+}
+
+.sel-button:hover {
+  border-color: rgba(0,0,255,0.3);
+  outline-color: rgba(0,0,255,0.3);
+}
+
+.sel-button > label {
+  font-weight: normal;
+}
+
+.esp-margin {
+  display: inline-block;
+  margin-top: 1.2rem;
+}
