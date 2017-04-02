@@ -34,6 +34,11 @@ input[type="checkbox"]:checked + label {
   color:white;
 }
 
+label {
+  font-weight: normal;
+  color:#000;
+}
+
 .sel-button {
   width:19.5%;
   height:5rem;
@@ -54,6 +59,7 @@ input[type="checkbox"]:checked + label {
 }
 
 .esp-margin {
+  padding-top: 1.2rem;
+  vertical-align: middle;
   display: inline-block;
-  margin-top: 1.2rem;
 }
