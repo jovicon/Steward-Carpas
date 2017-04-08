@@ -125,6 +125,8 @@ $( '#check15' ).click(function() {
 // funcionamiento boton compuesto 1 type radio (Escenario)
 $( '#re1' ).click(function() {
     if ($(this).is(':checked')){
+      $("#check21l").addClass("ro-focus");
+      $("#check21r").addClass("ro-focus");
       $("#respas31").removeClass("without");
       $("#respas32").addClass("without");
       $("#respas33").addClass("without");
@@ -138,6 +140,8 @@ $( '#re1' ).click(function() {
 
 $( '#re2' ).click(function() {
     if ($(this).is(':checked')){
+      $("#check21l").addClass("ro-focus");
+      $("#check21r").addClass("ro-focus");
       $("#respas32").removeClass("without");
       $("#respas31").addClass("without");
       $("#respas33").addClass("without");
@@ -151,6 +155,8 @@ $( '#re2' ).click(function() {
 
 $( '#re3' ).click(function() {
     if ($(this).is(':checked')){
+      $("#check21l").addClass("ro-focus");
+      $("#check21r").addClass("ro-focus");
       $("#respas33").removeClass("without");
       $("#respas31").addClass("without");
       $("#respas32").addClass("without");
@@ -198,6 +204,8 @@ $( '#check24' ).click(function() {
 // funcionamiento boton compuesto 2 type radio (Pagoda)
 $( '#rp1' ).click(function() {
     if ($(this).is(':checked')){
+      $("#check25l").addClass("ro-focus");
+      $("#check25r").addClass("ro-focus");
       $("#respas37").removeClass("without");
       $("#respas38").addClass("without");
       $("#respas39").addClass("without");
@@ -211,6 +219,8 @@ $( '#rp1' ).click(function() {
 
 $( '#rp2' ).click(function() {
     if ($(this).is(':checked')){
+      $("#check25l").addClass("ro-focus");
+      $("#check25r").addClass("ro-focus");
       $("#respas38").removeClass("without");
       $("#respas37").addClass("without");
       $("#respas39").addClass("without");
@@ -224,6 +234,8 @@ $( '#rp2' ).click(function() {
 
 $( '#rp3' ).click(function() {
     if ($(this).is(':checked')){
+      $("#check25l").addClass("ro-focus");
+      $("#check25r").addClass("ro-focus");
       $("#respas39").removeClass("without");
       $("#respas37").addClass("without");
       $("#respas38").addClass("without");

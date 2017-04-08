@@ -63,3 +63,10 @@ label {
   vertical-align: middle;
   display: inline-block;
 }
+
+@media (min-width:1321px) {
+  .esp-margin3 {
+    padding-top:1.2rem;
+    display:inline-block;
+  }
+}
