@@ -1,6 +1,6 @@
 // my scripts
 
-// paso 1
+// funcionamiento botones paso 1
 $( '#personas1' ).click(function() {
     if( $(this).is(':focus') ){
         $("#numeroresu").removeClass("without");
@@ -59,8 +59,7 @@ $("#r3").click(function(){
 });
 
 
-// paso 2
-
+// funcionamiento de botones paso 2
 $( '#check11' ).click(function() {
     if( $(this).is(':checked') ){
         $("#img1paso2").addClass("display_img");
@@ -121,22 +120,197 @@ $( '#check15' ).click(function() {
     }
 });
 
-//total
+// funcionamiento de botones paso 3
 
-function sumar (valor) {
-    var total = 0;
-    valor = parseInt(valor); // Convertir el valor a un entero (número).
+// funcionamiento boton compuesto 1 type radio (Escenario)
+$( '#re1' ).click(function() {
+    if ($(this).is(':checked')){
+      $("#respas31").removeClass("without");
+      $("#respas32").addClass("without");
+      $("#respas33").addClass("without");
 
-    total = document.getElementById('spTotal').innerHTML;
+      // agregando color de fondo al seleccionar
+      $("#lre1").addClass("re-focus");
+      $("#lre2").removeClass("re-focus");
+      $("#lre3").removeClass("re-focus");
+    }
+});
 
-    // Aquí valido si hay un valor previo, si no hay datos, le pongo un cero "0".
-    total = (total == null || total == undefined || total == "") ? 0 : total;
+$( '#re2' ).click(function() {
+    if ($(this).is(':checked')){
+      $("#respas32").removeClass("without");
+      $("#respas31").addClass("without");
+      $("#respas33").addClass("without");
 
-    /* Esta es la suma. */
-    total = (parseInt(total) + parseInt(valor));
+      // agregando color de fondo al seleccionar
+      $("#lre2").addClass("re-focus");
+      $("#lre1").removeClass("re-focus");
+      $("#lre3").removeClass("re-focus");
+    }
+});
 
-    // Colocar el resultado de la suma en el control "span".
-    document.getElementById('spTotal').innerHTML = total;
-}
+$( '#re3' ).click(function() {
+    if ($(this).is(':checked')){
+      $("#respas33").removeClass("without");
+      $("#respas31").addClass("without");
+      $("#respas32").addClass("without");
+
+      // agregando color de fondo al seleccionar
+      $("#lre3").addClass("re-focus");
+      $("#lre1").removeClass("re-focus");
+      $("#lre2").removeClass("re-focus");
+    }
+});
+
+$( '#check22' ).click(function() {
+    if( $(this).is(':checked') ){
+        $("#img1paso3").addClass("display_img"); // -- esperando por las imagenes de steward para adjuntarlas
+        $("#respas34").removeClass("without");
+    } else {
+        $("#img1paso3").removeClass("display_img"); //  -- esperando por las imagenes de steward para adjuntarlas
+        $("#respas34").addClass("without");
+        $("#respaslabel21").addClass("without");
+    }
+});
+
+$( '#check23' ).click(function() {
+    if( $(this).is(':checked') ){
+        $("#img2paso3").addClass("display_img"); // -- esperando por las imagenes de steward para adjuntarlas
+        $("#respas35").removeClass("without");
+    } else {
+        $("#img2paso3").removeClass("display_img"); // -- esperando por las imagenes de steward para adjuntarlas
+        $("#respas35").addClass("without");
+        $("#respaslabel21").addClass("without");
+    }
+});
+
+$( '#check24' ).click(function() {
+    if( $(this).is(':checked') ){
+        $("#img3paso3").addClass("display_img"); // -- esperando por las imagenes de steward para adjuntarlas
+        $("#respas36").removeClass("without");
+    } else {
+        $("#img3paso3").removeClass("display_img"); // -- esperando por las imagenes de steward para adjuntarlas
+        $("#respas36").addClass("without");
+        $("#respaslabel21").addClass("without");
+    }
+});
+
+// funcionamiento boton compuesto 2 type radio (Pagoda)
+$( '#rp1' ).click(function() {
+    if ($(this).is(':checked')){
+      $("#respas37").removeClass("without");
+      $("#respas38").addClass("without");
+      $("#respas39").addClass("without");
+
+      // agregando color de fondo al seleccionar
+      $("#lrp1").addClass("rp-focus");
+      $("#lrp2").removeClass("rp-focus");
+      $("#lrp3").removeClass("rp-focus");
+    }
+});
+
+$( '#rp2' ).click(function() {
+    if ($(this).is(':checked')){
+      $("#respas38").removeClass("without");
+      $("#respas37").addClass("without");
+      $("#respas39").addClass("without");
+
+      // agregando color de fondo al seleccionar
+      $("#lrp2").addClass("rp-focus");
+      $("#lrp1").removeClass("rp-focus");
+      $("#lrp3").removeClass("rp-focus");
+    }
+});
+
+$( '#rp3' ).click(function() {
+    if ($(this).is(':checked')){
+      $("#respas39").removeClass("without");
+      $("#respas37").addClass("without");
+      $("#respas38").addClass("without");
+
+      // agregando color de fondo al seleccionar
+      $("#lrp3").addClass("rp-focus");
+      $("#lrp1").removeClass("rp-focus");
+      $("#lrp2").removeClass("rp-focus");
+    }
+});
+
+$( '#check26' ).click(function() {
+    if( $(this).is(':checked') ){
+        $("#img4paso3").addClass("display_img"); // -- esperando por las imagenes de steward para adjuntarlas
+        $("#respas310").removeClass("without");
+    } else {
+        $("#img4paso3").removeClass("display_img"); // -- esperando por las imagenes de steward para adjuntarlas
+        $("#respas310").addClass("without");
+        $("#respaslabel21").addClass("without");
+    }
+});
+
+$( '#check27' ).click(function() {
+    if( $(this).is(':checked') ){
+        $("#img5paso3").addClass("display_img"); // -- esperando por las imagenes de steward para adjuntarlas
+        $("#respas311").removeClass("without");
+    } else {
+        $("#img5paso3").removeClass("display_img"); // -- esperando por las imagenes de steward para adjuntarlas
+        $("#respas311").addClass("without");
+        $("#respaslabel21").addClass("without");
+    }
+});
+
+$( '#check28' ).click(function() {
+    if( $(this).is(':checked') ){
+        // $("#img6paso3").addClass("display_img"); //  -- esperando por las imagenes de steward para adjuntarlas
+        $("#respas312").removeClass("without");
+    } else {
+        // $("#img6paso3").removeClass("display_img"); // -- esperando por las imagenes de steward para adjuntarlas
+        $("#respas312").addClass("without");
+        $("#respaslabel21").addClass("without");
+    }
+});
+
+$( '#check29' ).click(function() {
+    if( $(this).is(':checked') ){
+        // $("#img1paso2").addClass("display_img");  -- esperando por las imagenes de steward para adjuntarlas
+        $("#respas313").removeClass("without");
+    } else {
+        // $("#img1paso2").removeClass("display_img");  -- esperando por las imagenes de steward para adjuntarlas
+        $("#respas313").addClass("without");
+        $("#respaslabel21").addClass("without");
+    }
+});
+
+$( '#check210' ).click(function() {
+    if( $(this).is(':checked') ){
+        // $("#img1paso2").addClass("display_img");  -- esperando por las imagenes de steward para adjuntarlas
+        $("#respas314").removeClass("without");
+    } else {
+        // $("#img1paso2").removeClass("display_img");  -- esperando por las imagenes de steward para adjuntarlas
+        $("#respas314").addClass("without");
+        $("#respaslabel21").addClass("without");
+    }
+});
+
+$( '#check211' ).click(function() {
+    if( $(this).is(':checked') ){
+        // $("#img1paso2").addClass("display_img");  -- esperando por las imagenes de steward para adjuntarlas
+        $("#respas315").removeClass("without");
+    } else {
+        // $("#img1paso2").removeClass("display_img");  -- esperando por las imagenes de steward para adjuntarlas
+        $("#respas315").addClass("without");
+        $("#respaslabel21").addClass("without");
+    }
+});
+
+$( '#check212' ).click(function() {
+    if( $(this).is(':checked') ){
+        // $("#img1paso2").addClass("display_img");  -- esperando por las imagenes de steward para adjuntarlas
+        $("#respas316").removeClass("without");
+    } else {
+        // $("#img1paso2").removeClass("display_img");  -- esperando por las imagenes de steward para adjuntarlas
+        $("#respas316").addClass("without");
+        $("#respaslabel21").addClass("without");
+    }
+});
+// total
 
 // end my scripts

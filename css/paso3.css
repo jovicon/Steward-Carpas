@@ -42,3 +42,37 @@ label > span.caret {
   padding-top: 0.7rem;
   display: block;
 }
+
+/* editando padding ul y li de bootstrap */
+ul.dropdown-menu {
+  height:auto;
+  padding: 0;
+}
+
+.dropdown-menu .divider {
+  margin:0;
+}
+
+ul > li > label {
+  height:auto;
+  width:100%;
+}
+
+ul > li > label {
+  margin:0;
+  padding: 0.5rem 0;
+  padding-left:1rem;
+}
+
+ul > li > label:hover {
+  background-color: rgba(204,204,204,0.8);
+  color:black;
+  transition: 0.5s ease;
+}
+
+.re-focus, .rp-focus{
+  outline: none;
+  background-color: rgba(255,80,0,0.75);
+  color:white;
+  box-shadow: none;
+}

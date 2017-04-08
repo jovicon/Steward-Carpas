@@ -30,7 +30,7 @@ input[type="checkbox"] + label {
 
 input[type="checkbox"]:checked + label {
   outline: none;
-  background-color: rgba(255,80,0,0.8);
+  background-color: rgba(255,80,0,0.75);
   color:white;
 }
 

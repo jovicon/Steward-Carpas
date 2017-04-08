@@ -42,7 +42,7 @@
 
               <h3 class="sub-title">Seleccione el formato del evento</h3>
               <div class="button_1">
-                <input id="r1" type="radio" name="radio" value="400000" onclick="sumar(this.value);">
+                <input id="r1" type="radio" name="radio" value="Coctel">
                 <label for="r1"><img id="r1-img" class="img-responsive" src="img/paso1/1.png" alt="">Coctel de pie</label>
               </div>
 
@@ -112,19 +112,26 @@
 
             <div class="paso3">
 
-              <figure>
-
                 <h3 class="sub-title">Seleccione uno o mas complementos</h3>
-                <img src="" alt="">
+                <figure class="figure-margin">
 
-              </figure>
+                  <img id="img1paso3" class="img-responsive img-paso2" src="img/paso2/2.png" alt="">
+                  <img id="img2paso3" class="img-responsive img-paso2" src="img/paso2/3.png" alt="">
+                  <img id="img3paso3" class="img-responsive img-paso2" src="img/paso2/4.png" alt="">
+                  <img id="img4paso3" class="img-responsive img-paso2" src="img/paso2/5.png" alt="">
+                  <img id="img5paso3" class="img-responsive img-paso2" src="img/paso2/1.png" alt="">
+                  <img id="img6paso3" class="img-responsive img-paso2" src="img/paso2/base.png" alt="">
+                  <img class="img-responsive base" src="img/paso2/base.png" alt="">
+                  <img class="img-responsive" src="img/paso2/base.png" style="width:90%;" alt="">
+
+                </figure>
 
               <div class="aside-margin margin-bottom">
 
                 <div class="btn-group sel-button-2">
 
                   <input id="check21" type="checkbox" name="" value="Escenario">
-                  <label class="btn bitem-left" for="check21"><p>Escenario</p></label>
+                  <label class="btn bitem-left" data-toggle="dropdown" for="check21"><p>Escenario</p></label>
                   <label class="btn bitem-right dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
 
                     <span class="caret"></span>
@@ -133,9 +140,24 @@
                   </label>
 
                   <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">Solo DJ (2 modulos)</a></li>
-                        <li><a href="#">Oequesta (5 pers.)(10modulos)</a></li>
-                        <li><a href="#">Orquestas (10 pers.)(12 modulos)</a></li>
+                    <li>
+                      <input id="re1" type="radio" name="escenario" value="3x3">
+                      <label id="lre1" class="" for="re1">Solo DJ (2 modulos)</label>
+                    </li>
+
+                    <li class="divider"></li>
+
+                    <li>
+                      <input id="re2" type="radio" name="escenario" value="4x4">
+                      <label id="lre2" for="re2">Orquesta (5pers.)(10 modulos)</label>
+                    </li>
+
+                    <li class="divider"></li>
+
+                    <li>
+                      <input id="re3" type="radio" name="escenario" value="5x5">
+                      <label id="lre3" for="re3">Orquestas (10 pers.)(12 modulos)</label>
+                    </li>
                   </ul>
 
                 </div>
@@ -154,7 +176,7 @@
                 <div class="btn-group sel-button-2">
 
                   <input id="check25" type="checkbox" name="" value="Pagoda">
-                  <label class="btn bitem-left" for="check25"><p>Pagoda</p></label>
+                  <label class="btn bitem-left" data-toggle="dropdown" for="check25"><p>Pagoda</p></label>
                   <label class="btn bitem-right dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
 
                     <span class="caret"></span>
@@ -163,9 +185,24 @@
                   </label>
 
                   <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">3x3 metros</a></li>
-                    <li><a href="#">4x4 metros</a></li>
-                    <li><a href="#">5x5 metros</a></li>
+                    <li>
+                      <input id="rp1" type="radio" name="pagoda" value="3x3">
+                      <label id="lrp1" for="rp1">3x3 metros</label>
+                    </li>
+
+                    <li class="divider"></li>
+
+                    <li>
+                      <input id="rp2" type="radio" name="pagoda" value="4x4">
+                      <label id="lrp2" for="rp2">4x4 metros</label>
+                    </li>
+
+                    <li class="divider"></li>
+
+                    <li>
+                      <input id="rp3" type="radio" name="pagoda" value="5x5">
+                      <label id="lrp3" for="rp3">5x5 metros</label>
+                    </li>
                   </ul>
 
                 </div>
@@ -284,22 +321,117 @@
           <!-- resumen paso 3 -->
           <div class="">
 
-            <input class="without" type="text" name="" value="">
-            <input class="without" type="text" name="" value="">
-            <input class="without" type="text" name="" value="">
-            <input class="without" type="text" name="" value="">
-            <input class="without" type="text" name="" value="">
-            <input class="without" type="text" name="" value="">
-            <input class="without" type="text" name="" value="">
-            <input class="without" type="text" name="" value="">
-            <input class="without" type="text" name="" value="">
-            <input class="without" type="text" name="" value="">
-            <input class="without" type="text" name="" value="">
-            <input class="without" type="text" name="" value="">
-            <input class="without" type="text" name="" value="">
-            <input class="without" type="text" name="" value="">
-            <input class="without" type="text" name="" value="">
-            <input class="without" type="text" name="" value="">
+            <div id="respas31" class="without mitem-resumen">
+
+              <label for="respas31" class="litem-resumen">Escenario - Solo DJ</label>
+              <input class="ritem-resumen" type="text" name="" value="" readonly="readonly">
+
+            </div>
+
+            <div id="respas32" class="without mitem-resumen">
+
+              <label for="respas32" class="litem-resumen">Escenario - Orquesta (5 pers.)</label>
+              <input class="ritem-resumen" type="text" name="" value="" readonly="readonly">
+
+            </div>
+
+            <div id="respas33" class="without mitem-resumen">
+
+              <label for="respas33" class="litem-resumen">Escenario - Orquesta (10 pers.)</label>
+              <input class="ritem-resumen" type="text" name="" value="" readonly="readonly">
+
+            </div>
+
+            <div id="respas34" class="without mitem-resumen">
+
+              <label for="respas34" class="litem-resumen">Carpa de Servicio</label>
+              <input class="ritem-resumen" type="text" name="" value="" readonly="readonly">
+
+            </div>
+
+            <div id="respas35" class="without mitem-resumen">
+
+              <label for="respas35" class="litem-resumen">Generador de Energia</label>
+              <input class="ritem-resumen" type="text" name="" value="" readonly="readonly">
+
+            </div>
+
+            <div id="respas36" class="without mitem-resumen">
+
+              <label for="respas36" class="litem-resumen">Pasillo de Alfombra</label>
+              <input class="ritem-resumen" type="text" name="" value="" readonly="readonly">
+
+            </div>
+
+            <div id="respas37" class="without mitem-resumen">
+
+              <label for="respas37" class="litem-resumen">Pagoga - 3x3 metros</label>
+              <input  class="ritem-resumen" type="text" name="" value="" readonly="readonly">
+
+            </div>
+
+            <div id="respas38" class="without mitem-resumen">
+
+              <label for="respas38" class="litem-resumen">Pagoda - 4x4 metros</label>
+              <input class="ritem-resumen" type="text" name="" value="" readonly="readonly">
+
+            </div>
+
+            <div id="respas39" class="without mitem-resumen">
+
+              <label for="respas39" class="litem-resumen">Pagoda - 5x5 metros</label>
+              <input class="ritem-resumen" type="text" name="" value="" readonly="readonly">
+
+            </div>
+
+            <div id="respas310" class="without mitem-resumen">
+
+              <label for="respas310" class="litem-resumen">Iluminacion Ambiental</label>
+              <input class="ritem-resumen" type="text" name="" value="" readonly="readonly">
+
+            </div>
+
+            <div id="respas311" class="without mitem-resumen">
+
+              <label for="respas311" class="litem-resumen">Calefaccion</label>
+              <input class="ritem-resumen" type="text" name="" value="" readonly="readonly">
+
+            </div>
+
+            <div id="respas312" class="without mitem-resumen">
+
+              <label for="respas312" class="litem-resumen">Ventilador Evaporativo</label>
+              <input class="ritem-resumen" type="text" name="" value="" readonly="readonly">
+
+            </div>
+
+            <div id="respas313" class="without mitem-resumen">
+
+              <label for="respas313" class="litem-resumen">Pista de baile</label>
+              <input class="ritem-resumen" type="text" name="" value="" readonly="readonly">
+
+            </div>
+
+            <div id="respas314" class="without mitem-resumen">
+
+              <label for="respas314" class="litem-resumen">Escenario</label>
+              <input class="ritem-resumen" type="text" name="" value="" readonly="readonly">
+
+            </div>
+
+            <div id="respas315" class="without mitem-resumen">
+
+              <label for="respas315" class="litem-resumen">Podium</label>
+              <input class="ritem-resumen" type="text" name="" value="" readonly="readonly">
+
+            </div>
+
+            <div id="respas316" class="without mitem-resumen">
+
+              <label for="respas316" class="litem-resumen">Piso de madera</label>
+              <input class="ritem-resumen" type="text" name="" value="" readonly="readonly">
+
+            </div>
 
           </div>
 
