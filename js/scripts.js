@@ -135,6 +135,11 @@ $( '#re1' ).click(function() {
       $("#lre1").addClass("re-focus");
       $("#lre2").removeClass("re-focus");
       $("#lre3").removeClass("re-focus");
+    }else{
+      $("#lre1").removeClass("re-focus");
+      $("#respas31").addClass("without");
+      $("#check21l").removeClass("ro-focus");
+      $("#check21r").removeClass("ro-focus");
     }
 });
 
@@ -150,6 +155,11 @@ $( '#re2' ).click(function() {
       $("#lre2").addClass("re-focus");
       $("#lre1").removeClass("re-focus");
       $("#lre3").removeClass("re-focus");
+    }else{
+      $("#lre2").removeClass("re-focus");
+      $("#respas32").addClass("without");
+      $("#check21l").removeClass("ro-focus");
+      $("#check21r").removeClass("ro-focus");
     }
 });
 
@@ -165,6 +175,11 @@ $( '#re3' ).click(function() {
       $("#lre3").addClass("re-focus");
       $("#lre1").removeClass("re-focus");
       $("#lre2").removeClass("re-focus");
+    }else{
+      $("#lre3").removeClass("re-focus");
+      $("#respas33").addClass("without");
+      $("#check21l").removeClass("ro-focus");
+      $("#check21r").removeClass("ro-focus");
     }
 });
 
@@ -214,6 +229,11 @@ $( '#rp1' ).click(function() {
       $("#lrp1").addClass("rp-focus");
       $("#lrp2").removeClass("rp-focus");
       $("#lrp3").removeClass("rp-focus");
+    }else{
+      $("#lrp1").removeClass("rp-focus");
+      $("#respas37").addClass("without");
+      $("#check25l").removeClass("ro-focus");
+      $("#check25r").removeClass("ro-focus");
     }
 });
 
@@ -229,6 +249,11 @@ $( '#rp2' ).click(function() {
       $("#lrp2").addClass("rp-focus");
       $("#lrp1").removeClass("rp-focus");
       $("#lrp3").removeClass("rp-focus");
+    }else{
+      $("#lrp2").removeClass("rp-focus");
+      $("#respas38").addClass("without");
+      $("#check25l").removeClass("ro-focus");
+      $("#check25r").removeClass("ro-focus");
     }
 });
 
@@ -244,6 +269,11 @@ $( '#rp3' ).click(function() {
       $("#lrp3").addClass("rp-focus");
       $("#lrp1").removeClass("rp-focus");
       $("#lrp2").removeClass("rp-focus");
+    }else{
+      $("#lrp3").removeClass("rp-focus");
+      $("#respas39").addClass("without");
+      $("#check25l").removeClass("ro-focus");
+      $("#check25r").removeClass("ro-focus");
     }
 });
 
@@ -323,6 +353,17 @@ $( '#check212' ).click(function() {
         $("#respaslabel21").addClass("without");
     }
 });
+
+// uncheck de botones radio
+var era;
+var previo=null;
+function uncheckRadio(rbutton){
+if(previo &&previo!=rbutton){previo.era=false;}
+if(rbutton.checked==true && rbutton.era==true){rbutton.checked=false;}
+rbutton.era=rbutton.checked;
+previo=rbutton;
+}
+
 // total
 
 // end my scripts

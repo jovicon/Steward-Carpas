@@ -4,6 +4,15 @@
   width:24.5%;
 }
 
+/* cambiando detalles */
+.figure-margin2 {
+  margin:2.5rem 0;
+}
+
+.base2 {
+  width:94.85%;
+}
+
 /* editing bootstrap styles */
 
 .btn-group {
@@ -81,4 +90,32 @@ ul > li > label:hover {
   background-color: rgba(255,80,0,0.75);
   color:white;
   box-shadow: none;
+}
+
+@media(min-width:1555px) {
+  .sel-button-2 > .esp-margin6 {
+    display: inline-block;
+    padding-top: 1.2rem;
+  }
+}
+
+@media(min-width:1385px) {
+  .sel-button-2 > .esp-margin7 {
+    display: inline-block;
+    padding-top: 1.2rem;
+  }
+}
+
+@media(min-width:1586px) {
+  .sel-button-2 > .esp-margin8 {
+    display: inline-block;
+    padding-top: 1.2rem;
+  }
+}
+
+@media(min-width:1601px) {
+  .sel-button-2 > .esp-margin9{
+    display: inline-block;
+    padding-top: 1.2rem;
+  }
 }

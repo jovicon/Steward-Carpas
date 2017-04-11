@@ -70,3 +70,17 @@ label {
     display:inline-block;
   }
 }
+
+@media (min-width:1529px) {
+  .sel-button > span.esp-margin4 {
+    padding-top:1.2rem;
+    display:inline-block;
+  }
+}
+
+@media (min-width:1776px) {
+  .sel-button > span.esp-margin5 {
+    padding-top:1.2rem;
+    display:inline-block;
+  }
+}
