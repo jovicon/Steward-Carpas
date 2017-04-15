@@ -6,14 +6,21 @@
   padding: 0;
   background-color: rgba(204,204,204,0.5);
   position:fixed;
-  z-index:100;
+  z-index:100000;
+}
+
+.resumen-header {
+  border-bottom: solid 1px black;
 }
 
 .sub-resumen {
   width: 100%;
   color:black;
   background-color: transparent;
-  border-bottom: solid 1px black;
+}
+
+.collapse {
+  display: block;
 }
 
 .out-text {
@@ -23,6 +30,25 @@
   background: transparent;
   text-align: center;
   color:#ff5000;
+}
+
+.mobile-button {
+  display: none;
+}
+
+.caret-icon {
+  width:25px;
+  height:25px;
+  background-color: transparent;
+}
+
+.caret-icon-normal {
+  margin-top: 0.8rem;
+}
+
+.caret-icon-inverse {
+  transform: rotate(180deg);
+  margin:0;
 }
 
 .without {
@@ -69,4 +95,46 @@
 .ritem-total {
   height: 4rem;
   background-color: transparent;
+}
+
+/*
+
+my queries
+
+*/
+
+@media (max-width:991px) {
+  /* editando bootstrap */
+
+  .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .resumen {
+    background-color: rgba(204,204,204,1);
+    margin-left: 0;
+    bottom:0;
+  }
+
+  .sub-resumen {
+    width:85%;
+  }
+
+  .collapse {
+    display:none;
+  }
+
+  .mobile-button {
+    display: inline;
+    position:absolute;
+    /*margin-top:0.8rem;*/
+    width:15%;
+    height:auto;
+    right:0;
+    background-color: transparent;
+    outline: none;
+    border:none;
+  }
+
 }

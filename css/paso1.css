@@ -57,3 +57,15 @@ div.button_1 {
   background-color: rgba(204,204,204,0.5);
   box-shadow: none;
 }
+
+/*
+
+my queries
+
+*/
+
+@media (max-width:991px){
+  .button_1 > label {
+    font-size: 1.2rem;
+  }
+}

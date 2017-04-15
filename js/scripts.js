@@ -354,15 +354,29 @@ $( '#check212' ).click(function() {
     }
 });
 
-// uncheck de botones radio
+// funcinamiento de uncheck para botones radio
+
 var era;
+
 var previo=null;
+
 function uncheckRadio(rbutton){
-if(previo &&previo!=rbutton){previo.era=false;}
-if(rbutton.checked==true && rbutton.era==true){rbutton.checked=false;}
-rbutton.era=rbutton.checked;
-previo=rbutton;
+  if(previo &&previo!=rbutton){previo.era=false;}
+    if(rbutton.checked==true && rbutton.era==true){rbutton.checked=false;}
+      rbutton.era=rbutton.checked;
+      previo=rbutton;
 }
+
+// cambio de icono caret up and down
+$("#mobile-button").click(function(){
+  if($("#mobile-menu").attr("aria-expanded") == "true"){
+    $("#icon-up").removeClass("display-off");
+    $("#icon-down").addClass("display-off");
+  } else {
+    $("#icon-up").addClass("display-off");
+    $("#icon-down").removeClass("display-off");
+  }
+});
 
 // total
 

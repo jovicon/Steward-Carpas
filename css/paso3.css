@@ -1,5 +1,9 @@
 /* estilos paso 3 */
 
+.global3 {
+  margin-bottom: 10%;
+}
+
 .sel-button-2 {
   width:24.5%;
 }
@@ -10,7 +14,8 @@
 }
 
 .base2 {
-  width:94.85%;
+  width:calc(100% - 31.7px);
+  margin-left:0;
 }
 
 /* editing bootstrap styles */
@@ -92,30 +97,59 @@ ul > li > label:hover {
   box-shadow: none;
 }
 
-@media(min-width:1555px) {
-  .sel-button-2 > .esp-margin6 {
-    display: inline-block;
-    padding-top: 1.2rem;
-  }
-}
+/*
 
-@media(min-width:1385px) {
-  .sel-button-2 > .esp-margin7 {
-    display: inline-block;
-    padding-top: 1.2rem;
-  }
-}
+my queries
 
-@media(min-width:1586px) {
-  .sel-button-2 > .esp-margin8 {
-    display: inline-block;
-    padding-top: 1.2rem;
-  }
-}
+*/
 
-@media(min-width:1601px) {
-  .sel-button-2 > .esp-margin9{
-    display: inline-block;
-    padding-top: 1.2rem;
+/* margin para texto de botones */
+  @media(min-width:1555px) {
+    .sel-button-2 > .esp-margin6 {
+      display: inline-block;
+      padding-top: 1.2rem;
+    }
+  }
+
+  @media(min-width:1385px) {
+    .sel-button-2 > .esp-margin7 {
+      display: inline-block;
+      padding-top: 1.2rem;
+    }
+  }
+
+  @media(min-width:1586px) {
+    .sel-button-2 > .esp-margin8 {
+      display: inline-block;
+      padding-top: 1.2rem;
+    }
+  }
+
+  @media(min-width:1601px) {
+    .sel-button-2 > .esp-margin9{
+      display: inline-block;
+      padding-top: 1.2rem;
+    }
+  }
+/* margin para texto de botones */
+
+/* mobile-tablet */
+@media (max-width: 991px){
+  .global3 {
+    margin-bottom: 30%;
+  }
+
+  .sel-button-2 {
+    width:100%;
+  }
+
+  .btn-group > label {
+    height:3.2rem;
+    padding:0;
+    font-size: 1.2rem;
+  }
+
+  .btn-group > label > p {
+    margin-left: 15%;
   }
 }
