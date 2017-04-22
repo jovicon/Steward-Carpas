@@ -391,11 +391,13 @@ $(document).ready(function(){
 		if ( $(window).scrollTop() >= positionFigure ){
 			$("#img_paso3").addClass("figure-fix"); // add class menu-fix to nav bar
       $("#buttons3").css("margin-top", (heightButtonsThree) +"px");
+      $("buttons3").addClass("padding-25");
       $("#img_base3").css("display", "none");
     }
 		else {
 			$("#img_paso3").removeClass("figure-fix"); //remove class menu-fix from nav bar
       $("#buttons3").css("margin-top", "0");
+      $("buttons3").removeClass("padding-25");
       $("#img_base3").css("display", "block");
     }
 		//if ($(window).scrollTop()  )
