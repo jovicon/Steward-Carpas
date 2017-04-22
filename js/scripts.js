@@ -378,6 +378,24 @@ $("#mobile-button").click(function(){
   }
 });
 
+// script de funcionamiento de imagen top
+
+$(document).ready(function(){
+	//capture the position of my figure 3
+	var i = $("#img_paso3").offset().top;
+	//function to add the class menu-fix if the
+	//position of nav bar is less than top scroll
+	$(window).on("scroll", function(){
+		if ( $(window).scrollTop() >= i ){
+			$("#img_paso3").addClass("figure-fix"); // add class menu-fix to nav bar
+		}
+		else {
+			$("#img_paso3").removeClass("figure-fix"); //remove class menu-fix from nav bar
+		}
+		//if ($(window).scrollTop()  )
+	});
+});
+
 // total
 
 // end my scripts

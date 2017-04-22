@@ -97,6 +97,16 @@ ul > li > label:hover {
   box-shadow: none;
 }
 
+/* fixed menu */
+
+.figure-fix {
+	position: fixed;
+	z-index:100;
+	top:0;
+  left: 0;
+	width:100%;
+}
+
 /*
 
 my queries
