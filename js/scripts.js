@@ -382,16 +382,22 @@ $("#mobile-button").click(function(){
 
 $(document).ready(function(){
 	//capture the position of my figure 3
-	var i = $("#img_paso3").offset().top;
-	//function to add the class menu-fix if the
+  var positionFigure = $("#img_paso3").offset().top;
+	var heightButtonsThree = $("#buttons3").outerHeight(true);
+  heightButtonsThree /= 2;
+	//function to add the class figure-fix if the
 	//position of nav bar is less than top scroll
 	$(window).on("scroll", function(){
-		if ( $(window).scrollTop() >= i ){
+		if ( $(window).scrollTop() >= positionFigure ){
 			$("#img_paso3").addClass("figure-fix"); // add class menu-fix to nav bar
-		}
+      $("#buttons3").css("margin-top", (heightButtonsThree) +"px");
+      $("#img_base3").css("display", "none");
+    }
 		else {
 			$("#img_paso3").removeClass("figure-fix"); //remove class menu-fix from nav bar
-		}
+      $("#buttons3").css("margin-top", "0");
+      $("#img_base3").css("display", "block");    
+    }
 		//if ($(window).scrollTop()  )
 	});
 });
