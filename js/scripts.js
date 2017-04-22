@@ -383,7 +383,7 @@ $("#mobile-button").click(function(){
 $(document).ready(function(){
 	//capture the position of my figure 3
   var positionFigure = $("#img_paso3").offset().top;
-	var heightButtonsThree = $("#buttons3").outerHeight(true);
+	var heightButtonsThree = $("#img_paso3").outerHeight(true);
   heightButtonsThree /= 2;
 	//function to add the class figure-fix if the
 	//position of nav bar is less than top scroll
