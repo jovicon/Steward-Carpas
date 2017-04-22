@@ -385,7 +385,6 @@ $(document).ready(function(){
   var positionFigure = $("#img_paso3").offset().top;
 	var heightButtonsThree = $("#buttons3").outerHeight(true);
   heightButtonsThree /= 2;
-  heightButtonsThree += 25;
 	//function to add the class figure-fix if the
 	//position of nav bar is less than top scroll
 	$(window).on("scroll", function(){
