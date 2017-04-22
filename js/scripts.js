@@ -385,6 +385,7 @@ $(document).ready(function(){
   var positionFigure = $("#img_paso3").offset().top;
 	var heightButtonsThree = $("#buttons3").outerHeight(true);
   heightButtonsThree /= 2;
+  heightButtonsThree += 25;
 	//function to add the class figure-fix if the
 	//position of nav bar is less than top scroll
 	$(window).on("scroll", function(){
@@ -396,7 +397,7 @@ $(document).ready(function(){
 		else {
 			$("#img_paso3").removeClass("figure-fix"); //remove class menu-fix from nav bar
       $("#buttons3").css("margin-top", "0");
-      $("#img_base3").css("display", "block");    
+      $("#img_base3").css("display", "block");
     }
 		//if ($(window).scrollTop()  )
 	});
