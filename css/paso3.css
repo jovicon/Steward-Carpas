@@ -172,7 +172,7 @@ my queries
   /* fixed image */
   .figure-fix {
   	position: fixed;
-  	z-index:100;
+  	z-index:1000000000;
   	top:0;
     left: 0;
   	width:100%;
