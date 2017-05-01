@@ -12,6 +12,7 @@ body, h1, h2, h3, h4, h5, p {
 main {
   width:80%;
   margin:0 auto;
+  padding-top: 3rem;
   background-color: white;
 }
 

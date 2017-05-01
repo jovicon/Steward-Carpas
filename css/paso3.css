@@ -97,18 +97,6 @@ ul > li > label:hover {
   box-shadow: none;
 }
 
-/* fixed menu */
-
-.figure-fix {
-	position: fixed;
-	z-index:100;
-	top:0;
-  left: 0;
-	width:100%;
-  padding: 0 16px 0 16px;
-  margin:0;
-}
-
 .padding-25 {
   padding-top: 2.5rem;
 }
@@ -167,5 +155,18 @@ my queries
 
   .btn-group > label > p {
     margin-left: 15%;
+  }
+}
+
+@media (max-width:991px) and (orientation:portrait) {
+  /* fixed image */
+  .figure-fix {
+  	position: fixed;
+  	z-index:100;
+  	top:0;
+    left: 0;
+  	width:100%;
+    padding: 0 16px 0 16px;
+    margin:0;
   }
 }
