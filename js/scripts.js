@@ -4,6 +4,7 @@
 $( '#personas1' ).click(function() {
     if( $(this).is(':focus') ){
         $("#numeroresu").removeClass("without");
+        $("#referal_text").addClass("display-off");
     } else {
 
     }
@@ -27,6 +28,7 @@ $("#r1").click(function(){
     $("#respaslabel11").removeClass("without");
     $("#respaslabel12").addClass("without");
     $("#respaslabel13").addClass("without");
+    $("#referal_text").addClass("display-off");
   }
 });
 
@@ -41,6 +43,7 @@ $("#r2").click(function(){
     $("#respaslabel11").addClass("without");
     $("#respaslabel12").removeClass("without");
     $("#respaslabel13").addClass("without");
+    $("#referal_text").addClass("display-off");
   }
 });
 
@@ -55,6 +58,7 @@ $("#r3").click(function(){
     $("#respaslabel11").addClass("without");
     $("#respaslabel12").addClass("without");
     $("#respaslabel13").removeClass("without");
+    $("#referal_text").addClass("display-off");
   }
 });
 
@@ -65,6 +69,7 @@ $( '#check11' ).click(function() {
         $("#img1paso2").addClass("display_img");
         $("#respas21").removeClass("without");
         $("#respaslabel21").removeClass("without");
+        $("#referal_text").addClass("display-off");
     } else {
         $("#img1paso2").removeClass("display_img");
         $("#respas21").addClass("without");
@@ -77,6 +82,7 @@ $( '#check12' ).click(function() {
         $("#img2paso2").addClass("display_img");
         $("#respas22").removeClass("without");
         $("#respaslabel22").removeClass("without");
+        $("#referal_text").addClass("display-off");
     } else {
         $("#img2paso2").removeClass("display_img");
         $("#respas22").addClass("without");
@@ -89,6 +95,7 @@ $( '#check13' ).click(function() {
         $("#img3paso2").addClass("display_img");
         $("#respas23").removeClass("without");
         $("#respaslabel23").removeClass("without");
+        $("#referal_text").addClass("display-off");
     } else {
         $("#img3paso2").removeClass("display_img");
         $("#respas23").addClass("without");
@@ -101,6 +108,7 @@ $( '#check14' ).click(function() {
         $("#img4paso2").addClass("display_img");
         $("#respas24").removeClass("without");
         $("#respaslabel24").removeClass("without");
+        $("#referal_text").addClass("display-off");
     } else {
         $("#img4paso2").removeClass("display_img");
         $("#respas24").addClass("without");
@@ -113,6 +121,7 @@ $( '#check15' ).click(function() {
         $("#img5paso2").addClass("display_img");
         $("#respas25").removeClass("without");
         $("#respaslabel25").removeClass("without");
+        $("#referal_text").addClass("display-off");
     } else {
         $("#img5paso2").removeClass("display_img");
         $("#respas25").addClass("without");
@@ -130,6 +139,7 @@ $( '#re1' ).click(function() {
       $("#respas31").removeClass("without");
       $("#respas32").addClass("without");
       $("#respas33").addClass("without");
+      $("#referal_text").addClass("display-off");
 
       // agregando color de fondo al seleccionar
       $("#lre1").addClass("re-focus");
@@ -150,6 +160,7 @@ $( '#re2' ).click(function() {
       $("#respas32").removeClass("without");
       $("#respas31").addClass("without");
       $("#respas33").addClass("without");
+      $("#referal_text").addClass("display-off");
 
       // agregando color de fondo al seleccionar
       $("#lre2").addClass("re-focus");
@@ -170,6 +181,7 @@ $( '#re3' ).click(function() {
       $("#respas33").removeClass("without");
       $("#respas31").addClass("without");
       $("#respas32").addClass("without");
+      $("#referal_text").addClass("display-off");
 
       // agregando color de fondo al seleccionar
       $("#lre3").addClass("re-focus");
@@ -187,6 +199,7 @@ $( '#check22' ).click(function() {
     if( $(this).is(':checked') ){
         $("#img1paso3").addClass("display_img"); // -- esperando por las imagenes de steward para adjuntarlas
         $("#respas34").removeClass("without");
+        $("#referal_text").addClass("display-off");
     } else {
         $("#img1paso3").removeClass("display_img"); //  -- esperando por las imagenes de steward para adjuntarlas
         $("#respas34").addClass("without");
@@ -198,6 +211,7 @@ $( '#check23' ).click(function() {
     if( $(this).is(':checked') ){
         $("#img2paso3").addClass("display_img"); // -- esperando por las imagenes de steward para adjuntarlas
         $("#respas35").removeClass("without");
+        $("#referal_text").addClass("display-off");
     } else {
         $("#img2paso3").removeClass("display_img"); // -- esperando por las imagenes de steward para adjuntarlas
         $("#respas35").addClass("without");
@@ -209,6 +223,7 @@ $( '#check24' ).click(function() {
     if( $(this).is(':checked') ){
         $("#img3paso3").addClass("display_img"); // -- esperando por las imagenes de steward para adjuntarlas
         $("#respas36").removeClass("without");
+        $("#referal_text").addClass("display-off");
     } else {
         $("#img3paso3").removeClass("display_img"); // -- esperando por las imagenes de steward para adjuntarlas
         $("#respas36").addClass("without");
@@ -224,6 +239,7 @@ $( '#rp1' ).click(function() {
       $("#respas37").removeClass("without");
       $("#respas38").addClass("without");
       $("#respas39").addClass("without");
+      $("#referal_text").addClass("display-off");
 
       // agregando color de fondo al seleccionar
       $("#lrp1").addClass("rp-focus");
@@ -244,6 +260,7 @@ $( '#rp2' ).click(function() {
       $("#respas38").removeClass("without");
       $("#respas37").addClass("without");
       $("#respas39").addClass("without");
+      $("#referal_text").addClass("display-off");
 
       // agregando color de fondo al seleccionar
       $("#lrp2").addClass("rp-focus");
@@ -264,6 +281,7 @@ $( '#rp3' ).click(function() {
       $("#respas39").removeClass("without");
       $("#respas37").addClass("without");
       $("#respas38").addClass("without");
+      $("#referal_text").addClass("display-off");
 
       // agregando color de fondo al seleccionar
       $("#lrp3").addClass("rp-focus");
@@ -281,6 +299,7 @@ $( '#check26' ).click(function() {
     if( $(this).is(':checked') ){
         $("#img4paso3").addClass("display_img"); // -- esperando por las imagenes de steward para adjuntarlas
         $("#respas310").removeClass("without");
+        $("#referal_text").addClass("display-off");
     } else {
         $("#img4paso3").removeClass("display_img"); // -- esperando por las imagenes de steward para adjuntarlas
         $("#respas310").addClass("without");
@@ -292,6 +311,7 @@ $( '#check27' ).click(function() {
     if( $(this).is(':checked') ){
         $("#img5paso3").addClass("display_img"); // -- esperando por las imagenes de steward para adjuntarlas
         $("#respas311").removeClass("without");
+        $("#referal_text").addClass("display-off");
     } else {
         $("#img5paso3").removeClass("display_img"); // -- esperando por las imagenes de steward para adjuntarlas
         $("#respas311").addClass("without");
@@ -303,6 +323,7 @@ $( '#check28' ).click(function() {
     if( $(this).is(':checked') ){
         // $("#img6paso3").addClass("display_img"); //  -- esperando por las imagenes de steward para adjuntarlas
         $("#respas312").removeClass("without");
+        $("#referal_text").addClass("display-off");
     } else {
         // $("#img6paso3").removeClass("display_img"); // -- esperando por las imagenes de steward para adjuntarlas
         $("#respas312").addClass("without");
@@ -314,6 +335,7 @@ $( '#check29' ).click(function() {
     if( $(this).is(':checked') ){
         // $("#img1paso2").addClass("display_img");  -- esperando por las imagenes de steward para adjuntarlas
         $("#respas313").removeClass("without");
+        $("#referal_text").addClass("display-off");
     } else {
         // $("#img1paso2").removeClass("display_img");  -- esperando por las imagenes de steward para adjuntarlas
         $("#respas313").addClass("without");
@@ -325,6 +347,7 @@ $( '#check210' ).click(function() {
     if( $(this).is(':checked') ){
         // $("#img1paso2").addClass("display_img");  -- esperando por las imagenes de steward para adjuntarlas
         $("#respas314").removeClass("without");
+        $("#referal_text").addClass("display-off");
     } else {
         // $("#img1paso2").removeClass("display_img");  -- esperando por las imagenes de steward para adjuntarlas
         $("#respas314").addClass("without");
@@ -336,6 +359,7 @@ $( '#check211' ).click(function() {
     if( $(this).is(':checked') ){
         // $("#img1paso2").addClass("display_img");  -- esperando por las imagenes de steward para adjuntarlas
         $("#respas315").removeClass("without");
+        $("#referal_text").addClass("display-off");
     } else {
         // $("#img1paso2").removeClass("display_img");  -- esperando por las imagenes de steward para adjuntarlas
         $("#respas315").addClass("without");
@@ -347,6 +371,7 @@ $( '#check212' ).click(function() {
     if( $(this).is(':checked') ){
         // $("#img1paso2").addClass("display_img");  -- esperando por las imagenes de steward para adjuntarlas
         $("#respas316").removeClass("without");
+        $("#referal_text").addClass("display-off");
     } else {
         // $("#img1paso2").removeClass("display_img");  -- esperando por las imagenes de steward para adjuntarlas
         $("#respas316").addClass("without");
@@ -378,6 +403,16 @@ $("#mobile-button").click(function(){
   }
 });
 
+$("#resumen-button").click(function(){
+  if($("#mobile-menu").attr("aria-expanded") == "true"){
+    $("#icon-up").removeClass("display-off");
+    $("#icon-down").addClass("display-off");
+  } else {
+    $("#icon-up").addClass("display-off");
+    $("#icon-down").removeClass("display-off");
+  }
+});
+
 // script de funcionamiento de imagen top
 
 $(document).ready(function(){
@@ -398,8 +433,8 @@ $(document).ready(function(){
       $("#buttons3").css("margin-top", "0");
       $("buttons3").removeClass("padding-25");
       $("#img_base3").css("display", "block");
-    }
 		//if ($(window).scrollTop()  )
+  }
 	});
 });
 

@@ -55,6 +55,17 @@
   display:none;
 }
 
+.mitem-resumen.referal_text {
+  height:4rem;
+}
+
+.referal_text {
+  width: 100%;
+  text-align: left;
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
+}
+
 .mitem-resumen {
   height: 3rem;
   /*border-bottom: solid 1px black;*/
@@ -123,6 +134,12 @@ my queries
 
   .collapse {
     display:none;
+  }
+
+  #resumen-button {
+    position:absolute;
+    width:100%;
+    height:100%;
   }
 
   .mobile-button {

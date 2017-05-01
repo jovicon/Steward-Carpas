@@ -158,6 +158,16 @@ my queries
   }
 }
 
+@media (max-width:991px) and (orientation:landscape) {
+  .figure-fix {
+    position:absolute;
+  }
+
+  .aside-margin.margin-bottom {
+    margin-top: 15vh;
+  }
+}
+
 @media (max-width:991px) and (orientation:portrait) {
   /* fixed image */
   .figure-fix {
