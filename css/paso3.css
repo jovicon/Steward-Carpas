@@ -159,6 +159,14 @@ my queries
 }
 
 @media (max-width:991px) and (orientation:landscape) {
+   .base.base2 {
+     display:block!important;
+   }
+
+   #buttons3 {
+     margin-top: 1rem;
+   }
+
   .figure-fix {
     position:absolute;
   }
