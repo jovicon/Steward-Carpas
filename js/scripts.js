@@ -414,7 +414,7 @@ $("#resumen-button").click(function(){
 });
 
 // script de funcionamiento de imagen top
-if (window.innerWidth > "992"){
+if (window.innerWidth < "992"){
   $(document).ready(function(){
   	//capture the position of my figure 3
     var positionFigure = $("#img_paso3").offset().top;
