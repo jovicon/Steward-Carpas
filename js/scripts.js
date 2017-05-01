@@ -414,29 +414,31 @@ $("#resumen-button").click(function(){
 });
 
 // script de funcionamiento de imagen top
-
-$(document).ready(function(){
-	//capture the position of my figure 3
-  var positionFigure = $("#img_paso3").offset().top;
-	var heightButtonsThree = $("#img_paso3").outerHeight(true);
-	//function to add the class figure-fix if the
-	//position of nav bar is less than top scroll
-	$(window).on("scroll", function(){
-		if ( $(window).scrollTop() >= positionFigure ){
-			$("#img_paso3").addClass("figure-fix"); // add class menu-fix to nav bar
-      $("#buttons3").css("margin-top", (heightButtonsThree) +"px");
-      $("buttons3").addClass("padding-25");
-      $("#img_base3").css("display", "none");
+if (window.innerWidth > "992"){
+  $(document).ready(function(){
+  	//capture the position of my figure 3
+    var positionFigure = $("#img_paso3").offset().top;
+  	var heightButtonsThree = $("#img_paso3").outerHeight(true);
+  	//function to add the class figure-fix if the
+  	//position of nav bar is less than top scroll
+  	$(window).on("scroll", function(){
+  		if ( $(window).scrollTop() >= positionFigure ){
+  			$("#img_paso3").addClass("figure-fix"); // add class menu-fix to nav bar
+        $("#buttons3").css("margin-top", (heightButtonsThree) +"px");
+        $("buttons3").addClass("padding-25");
+        $("#img_base3").css("display", "none");
+      }
+  		else {
+  			$("#img_paso3").removeClass("figure-fix"); //remove class menu-fix from nav bar
+        $("#buttons3").css("margin-top", "0");
+        $("buttons3").removeClass("padding-25");
+        $("#img_base3").css("display", "block");
+  		//if ($(window).scrollTop()  )
     }
-		else {
-			$("#img_paso3").removeClass("figure-fix"); //remove class menu-fix from nav bar
-      $("#buttons3").css("margin-top", "0");
-      $("buttons3").removeClass("padding-25");
-      $("#img_base3").css("display", "block");
-		//if ($(window).scrollTop()  )
-  }
-	});
-});
+  	});
+  });
+}
+
 
 // total
 
