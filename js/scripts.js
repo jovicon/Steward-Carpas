@@ -440,6 +440,13 @@ if ((window.innerWidth < "992") && (window.innerWidth < window.innerHeight)){
   });
 }
 
+//control de eventos de resizing
+$(window).resize(function(){
+  if (window.innerWidth > 991){
+    $('#mobile-menu').css('height','auto');
+  }
+});
+
 
 // total
 
